@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="GIS Hun" name="viewport"  content="width=device-width, initial-scale=1.0">
     <title>GISYW</title>
-	<link rel = 'icon' type="image/x-icon" href="iamges/fivicon image.png">
+	<link rel = 'icon' type="Images/x-icon" href="Images/fivicon image.png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,8 +12,8 @@
             padding: 0;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color:transparent;
+            color: #eeecec;
             padding: 1em 0;
             text-align: center;
         }
@@ -31,8 +31,7 @@
             display: inline;
             margin: 0 15px;
         }
-        nav ul li a {
-            color: #333;
+        nav ul li a{
             text-decoration: none;
         }
         section {
@@ -43,50 +42,65 @@
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
-		.nav-link {
-		font-size: 28px;
-        }
 		
 		a:link, a:visited {
-		  background-color: #f44336;
-		  color: white;
+		  background-color: transparent;
+		  color: rgb(175, 33, 33);
 		  padding: 15px 25px;
 		  text-align: center;
 		  text-decoration: none;
 		  display: inline-block;
 		}
+        
+        .nav_link {
+            color: rgb(253, 249, 249);
+            font-size: 20px;
+            text-decoration: none;
+        }
 
+        .introduction_section {
+        float: left;
+        width: 25%;
+        height: 900px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+        margin:  40px 10px 30px 160px;
+        text-align: center
+        }
 
-		a:hover, a:active {
-		  background-color: red;
-		}
+   
+    
 
     </style>
 </head>
 
 <body>
-<header>
-    <h1 style = "color: white;background-color:powderblue;font-family:verdana;font-size:60px;background-image: url('iamges/earth_cover image.png');
-	background-repeat: no-repeat;background-size: 100% 100%;">Welcome to My GIS Hub</h1>
-	
-</header>
+<div style = "padding:180px;background-image: url('Images/person_cover/cover_top.jpg')">
+    <nav class = "nav_link">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#rewards">Rewards</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#cv" class="nav-link">CV</a></li>
-        <li><a href="#teaching" class="nav-link">Teaching</a></li>
-        <li><a href="#publications" class="nav-link">Publications</a></li>
-        <li><a href="#rewards" class="nav-link">Rewards</a></li>
-    </ul>
-</nav>
+    <header>
+        <h1 style = "font-family:verdana;font-size:60px;">Think Spatially</h1>
+    </header>
+</div>
 
-<a href="www.linkedin.com/in/giswu" target="_blank">LinkedIn</a>
+<section class = introduction_section >
 
+    <p> Yanan Wu <br> GIS Analyst <br> City of Lewisville</p>
+    <a href="https://github.com/gisynw/YananWu-Files/blob/a8ba2edcd213b85c98016fe92a6e742b1fb7f000/YananWu_CV.pdf">Curriculum Vitae</a>
+    <a href="https://github.com/gisynw/YananWu-Files/blob/a8ba2edcd213b85c98016fe92a6e742b1fb7f000/YananWu_CV.pdf">Resume</a>
+</section>
 
 <section id="about">
     <h2>About</h2>
@@ -102,33 +116,51 @@
     <h2>Teaching</h2>
     <p>I have been involved in teaching [Subject] at [Institution] for [Number] years. My teaching philosophy revolves around [Your Teaching Philosophy].</p>
 	<ul>
-	<li></li>
-	<li>Tea</li>
-	<li>Milk</li>
-</ul>  
-	<img src="iamges/teaching_statistics.png" alt="Trulli" width="230" height="300">
+        <li></li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>  
+
+	<iframe src="Images/teaching_statistics.png" name="iframe_a" title="Iframe Example"></iframe>
+    <p><a href="https://ywu120766.medium.com/" target="iframe_a">W3Schools.com</a></p>
 
 </section>
 
 <section id="publications">
     <h2>Publications</h2>
     <ul>
-        <li>Publication 1: <a href="link-to-publication1.pdf" target="_blank">Title of Publication 1</a></li>
-        <li>Publication 2: <a href="link-to-publication2.pdf" target="_blank">Title of Publication 2</a></li>
-        <li>Publication 3: <a href="link-to-publication3.pdf" target="_blank">Title of Publication 3</a></li>
+        <li><a href="link-to-publication1.pdf" target="_blank">What Local Environments Drive Opportunities for Social Events? A New Approach Based on Bayesian Modeling in Dallas, Texas, USA</a></li>
+        <li><a href="link-to-publication2.pdf" target="_blank">Location Analytics of Routine Occurrences (LARO) to Identify Locations with Regularly Occurring Events with a Case Study on Traffic Accidents</a></li>
+        <li><a href="link-to-publication3.pdf" target="_blank">Understanding the role of geographical environments in emergency dispatches with GPS trajectories</a></li>
+        <li><a href="link-to-publication3.pdf" target="_blank">Where and why there: location analytics of routine occurrences (LARO) with a case study on traffic accidents</a></li>
+        <li><a href="link-to-publication3.pdf" target="_blank">Analyze emergency-vehicle dispatches in Dallas, Texas, USA</a></li>
+        <li><a href="link-to-publication3.pdf" target="_blank">Integration of Earth Observation and in Situ Data for Analyzing Lake Level Changes in Minnesota (1992–2016)</a></li>
         <!-- Add more publications as needed -->
     </ul>
 </section>
 
 <section id="rewards">
     <h2>Rewards</h2>
-    <ul>
-        <li>Reward 1: [Description of Reward 1]</li>
-        <li>Reward 2: [Description of Reward 2]</li>
-        <li>Reward 3: [Description of Reward 3]</li>
-        <!-- Add more rewards as needed -->
-    </ul>
+    <iframe src="Images/teaching_statistics.png" name="iframe_a" title="Iframe Example"></iframe>
+    <p><a href="https://ywu120766.medium.com/" target="iframe_a">W3Schools.com</a></p>
+
 </section>
+
+<section>
+    <h2>Social Media</h2>
+    <iframe src="Images/teaching_statistics.png" name="iframe_a" title="Iframe Example"></iframe>
+    <p><a href="https://ywu120766.medium.com/" target="iframe_a">W3Schools.com</a></p>
+
+</section>
+
+<button type = 'button' onclick="myFunction()">Click me</button>
+<p id="demo">Check your lucky words!</p>
+
+<script>
+    function myFunction(){
+        document.getElementById("demo").innerHTML = "You are the best ONE!";
+    }
+</script>
 
 <footer>
     <p>&copy; 2024 [Your Name]. All rights reserved.</p>
