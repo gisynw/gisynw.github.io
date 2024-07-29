@@ -40,12 +40,12 @@
   .icon-layers2:before {
     content: "\e083";
   }
-  .icon-download4:before {
+  /* .icon-download4:before {
     content: "\e0a9";
-  }
-  .icon-briefcase3:before {
+  } */
+  /* .icon-briefcase3:before {
     content: "\e0af";
-  }
+  } */
   .icon-reload:before {
     content: "\e0b4";
   }
