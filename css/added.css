@@ -1,0 +1,24 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 50%; /* Optional: Adjust the width as needed */
+}
+.social-list ul li {
+    margin: 0 10px; /* Optional: Adjust the margin as needed */
+}
+.social-list ul li a {
+    text-decoration: none;
+    color: inherit; /* You can set a specific color if needed */
+    font-size: 24px; /* Adjust the icon size as needed */
+}
+.social-list ul li a:hover {
+    color: #007bff; /* Optional: Add a hover effect */
+}
