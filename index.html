@@ -44,7 +44,21 @@
              text-decoration: none;
             }
 
-          
+           header {
+            font-size: 30px;
+           }
+
+           /* nav ul li a{
+            font-size: 30px;
+            color: rgb(83, 83, 225);
+           } */
+
+           nav ul li{
+            list-style: none;
+            display: inline-block;
+            line-height: 2;
+            margin-right: 50px;
+           } 
             
         </style>
     </head>
@@ -52,12 +66,16 @@
     <body>
 
        <div>
-        <header>Introduction</header>
-        <header>Education</header>
-        <header><a href="#Pro">Projects</a></header>
+        <nav>
+            <ul>
+                <li> <a href="#Intro" style="color: red;">Introduction</a></li>
+                <li style="color: rgb(222, 15, 15);"> <a href="#Edu">Education</a></li>
+                <li><a href="#Pro">Projects</a></li>
+            </ul>
+        </nav>
        </div>
         
-       <div class="intro">
+       <div class="intro" id = "Intro">
             <h1>Introduction</h1>
             <img class = 'headshot' src="Images\headshot.jpg" alt="" width="440" height="380">
             <p>Visting Assistant Professor <br>
@@ -74,7 +92,7 @@
                 leveraging geographic information systems to address real-world challenges in urban environments.</p>
        </div>
        
-       <div class = "Edu">
+       <div class = "Edu" id = "Edu">
             <h1>Education</h1>
             <ul>
                 <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
@@ -83,7 +101,7 @@
             </ul>
        </div>
        
-       <div class = "Pro">
+       <div class = "Pro" id = "Pro">
             <h1>Projects</h1>
             <div class = "pro_image">
                 <figure>
