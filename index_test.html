@@ -13,45 +13,55 @@
         <link rel="stylesheet" href="">
 
         <style>
-            h1 {color: black;font-size: 40px;font-family: 'Courier New', Courier, monospace;}
-            p {text-align: center; color: red;}
-
+            h1 {color: black;font-size: 30px;font-family: 'Courier New', Courier, monospace;}
+            
+            p {color: rgb(29, 28, 28);
+               font-family: 'Times New Roman', Times, serif;
+               font-size: 18px;
+            }
+            
             .back_clark{
                 float: left;
             }
+            
+            .head{
+                border-radius: 30%
+            }
+            
         </style>
     </head>
    <!--  -->
     <body>
 
-       <div class="intro">
+       <div>
         <header>Introduction</header>
         <header>Education</header>
         <header><a href="#Pro">Projects</a></header>
        </div>
         
        <div class="intro">
-        <h1 style="font-size: 40px;" id = "intro">Introduction</h1>
-        <p> <a href="#Ede">Hi, my name is Yanan</a> </p>
-        <p>My major is <strong>GIS</strong></p>
-        <img src="Images\clark.jpg" alt="">
+        <h1>Introduction</h1>
+        <img class = 'head' src="Images\headshot.jpg" alt="" width="440" height="380">
+        <p>Visting Assistant Professor <br>
+            Geography Department, Clark University</p>
+
+        <p> Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the Department of Geography at Clark University. 
+            I hold a Ph.D. in Geospatial Information Sciences from the University of Texas at Dallas, an M.A. in Geography from Binghamton University, 
+            and a B.S. from Xi'an University of Science and Technology.</p> 
+        <p>As a geographer, my expertise lies in transportation geography, social geography, 
+            spatial-temporal analysis, and GIScience. My recent research has focused on analyzing emergency response times for vehicles in Dallas, 
+            where I utilized fine-grained spatial units to predict areas with extended response durations. This work is part of my broader interest in
+             leveraging geographic information systems to address real-world challenges in urban environments.</p>
        </div>
 
-        
-        
-        <p style="background-image: url('Images/clark.jpg');" class="back_clark">
-            Clark University is a private research <br>
-            university in Worcester, Massachusetts. Founded in 1887 <br>
-             with a large endowment from its namesake Jonas Gilman  <br>
-             Clark, a prominent businessman, Clark was one of the first <br>
-              modern research universities in the United States.</p>
-
         <h1 id = Ede>Education</h1>
-
+        <ul>
+            <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
+            <li>Master of Arts in Geography - May 2019</li>
+            <li>Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
+        </ul>
+         
         <h1 id = "Pro">Projects</h1>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         
         <script src="" async defer></script>
     </body>
