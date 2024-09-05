@@ -13,11 +13,13 @@
         <link rel="stylesheet" href="">
 
         <style>
-            h1 {color: black;font-size: 30px;font-family: 'Courier New', Courier, monospace;}
+            h1 {color: black;font-size: 30px;font-family: 'Courier New', Courier, monospace;
+               text-align: center;
+                }
             
             p {color: rgb(29, 28, 28);
                font-family: 'Times New Roman', Times, serif;
-               font-size: 18px;
+               font-size: 20px;
             }
             
             .back_clark{
@@ -27,6 +29,20 @@
             .headshot{
                 border-radius: 30%
             }
+            
+            .pro_image{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+            }
+
+            .pro_image figure {
+                display: flex;
+                flex-direction: row;          /* Stack the image and caption vertically */
+                align-items: center;             /* Center align images and captions */
+                margin: 0 20px;                  /* Optional: Add margin between the figures */
+                }
 
             .pro_image img{
                 width: 270px;
@@ -48,10 +64,14 @@
             font-size: 30px;
            }
 
-           /* nav ul li a{
+           nav ul li a{
             font-size: 30px;
-            color: rgb(83, 83, 225);
-           } */
+            color: rgb(104, 104, 215);
+           } 
+           
+           nav ul li a:hover{
+            color: black;
+           }
 
            nav ul li{
             list-style: none;
@@ -59,6 +79,39 @@
             line-height: 2;
             margin-right: 50px;
            } 
+
+           nav{
+            justify-content: flex-end;
+            display: flex;
+           }
+   
+           #intro{
+            margin-left: 200px;
+            margin-top: 100px;
+            margin-right: 200px;
+            float: left;
+           }
+
+           #p_intro{
+            margin-right: 200px;
+            margin-top: 100px;
+            margin-left: 200px;
+           }
+          
+           .history_list{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 25px;
+           }
+
+           #Pro{
+            margin-top: 120px;
+           }
+           
+           figcaption{
+            background-color: rgb(196, 191, 191);
+           }
+    
             
         </style>
     </head>
@@ -68,19 +121,21 @@
        <div>
         <nav>
             <ul>
-                <li> <a href="#Intro" style="color: red;">Introduction</a></li>
-                <li style="color: rgb(222, 15, 15);"> <a href="#Edu">Education</a></li>
+                <li> <a href="#Intro">Introduction</a></li>
+                <li> <a href="#Edu">Education</a></li>
                 <li><a href="#Pro">Projects</a></li>
             </ul>
         </nav>
        </div>
         
-       <div class="intro" id = "Intro">
-            <h1>Introduction</h1>
-            <img class = 'headshot' src="Images\headshot.jpg" alt="" width="440" height="380">
-            <p>Visting Assistant Professor <br>
+       <div class="intro" id = "intro">
+            <img class = 'headshot' src="Images\headshot.jpg" alt="" width="500" height="390">
+            <p style="text-align: center; line-height: 25px;">Visting Assistant Professor <br>
                 Geography Department, Clark University</p>
+        </div>
 
+        <div id="p_intro">
+            <h1>About Me</h1>
             <p> Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the <a href="https://www.clarku.edu/departments/geography/" class="lk">Department of Geography</a>
                 at <a href="https://www.clarku.edu/" class="lk">Clark University</a> . 
                 I hold a Ph.D. in <a href="https://epps.utdallas.edu/about/programs/geospatial-information-sciences/" class="lk">Geospatial Information Sciences</a> 
@@ -90,18 +145,20 @@
                 spatial-temporal analysis, and GIScience. My recent research has focused on analyzing emergency response times for vehicles in Dallas, 
                 where I utilized fine-grained spatial units to predict areas with extended response durations. This work is part of my broader interest in
                 leveraging geographic information systems to address real-world challenges in urban environments.</p>
-       </div>
+        </div>
+     
+           
        
        <div class = "Edu" id = "Edu">
             <h1>Education</h1>
-            <ul>
+            <ul class = "history_list">
                 <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
                 <li>Master of Arts in Geography - May 2019</li>
                 <li>Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
             </ul>
        </div>
        
-       <div class = "Pro" id = "Pro">
+       <div id = "Pro">
             <h1>Projects</h1>
             <div class = "pro_image">
                 <figure>
@@ -113,11 +170,7 @@
 
                     <img src="Images\webmap.png" alt="">
                     <figcaption>Web Mapping</figcaption>
-                </figure>
-                
-                
-                
-                
+                </figure>               
             </div>
        </div>
         
@@ -128,3 +181,4 @@
     </body>
 
 </html>
+
