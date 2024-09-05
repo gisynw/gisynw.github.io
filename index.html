@@ -13,45 +13,17 @@
         <link rel="stylesheet" href="">
 
         <style>
-            h1 {color: black;font-size: 30px;font-family: 'Courier New', Courier, monospace;
+            header {
+            font-size: 30px;
+            }
+
+            h1 {color: black;font-size: 35px;font-family: 'Courier New', Courier, monospace;
                text-align: center;
                 }
             
-            p {color: rgb(29, 28, 28);
+            p {color: rgb(19, 18, 18);
                font-family: 'Times New Roman', Times, serif;
-               font-size: 20px;
-            }
-            
-            .back_clark{
-                float: left;
-            }
-            
-            .headshot{
-                border-radius: 30%
-            }
-            
-            .pro_image{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                
-            }
-
-            .pro_image figure {
-                display: flex;
-                flex-direction: row;          /* Stack the image and caption vertically */
-                align-items: center;             /* Center align images and captions */
-                margin: 0 20px;                  /* Optional: Add margin between the figures */
-                }
-
-            .pro_image img{
-                width: 270px;
-                height: 230px;
-            }
-
-            .pro_image figcaption{
-                font-size: 20px;
-                
+               font-size: 25px;
             }
 
             a{
@@ -59,11 +31,19 @@
              font-weight: bold;
              text-decoration: none;
             }
+/* Navigation link Start*/
+            nav ul li{
+            list-style: none;
+            display: inline-block;
+            line-height: 2;
+            margin-right: 50px;
+           } 
 
-           header {
-            font-size: 30px;
-           }
-
+            nav{
+            justify-content: flex-end;
+            display: flex;
+            }
+            
            nav ul li a{
             font-size: 30px;
             color: rgb(104, 104, 215);
@@ -72,47 +52,103 @@
            nav ul li a:hover{
             color: black;
            }
-
-           nav ul li{
-            list-style: none;
-            display: inline-block;
-            line-height: 2;
-            margin-right: 50px;
-           } 
-
-           nav{
-            justify-content: flex-end;
-            display: flex;
-           }
-   
-           #intro{
+/* Navigation link End*/
+            
+            .headshot{
+                border-radius: 30%
+            }
+/* Intro photo Start */
+            #intro{
+            float: left;
             margin-left: 200px;
             margin-top: 100px;
             margin-right: 200px;
-            float: left;
+            border: solid;
+            height: 600px;
            }
+/* Intro photo End */
 
+/* Intro About me Start */
            #p_intro{
             margin-right: 200px;
             margin-top: 100px;
-            margin-left: 200px;
+            margin-left: 900px;
+            border: solid;
            }
-          
-           .history_list{
-            font-size: 20px;
+/* Intro About me End */
+
+/* attribute for three images in class = pro_image Start*/
+            .pro_image img{
+                width: 270px;
+                height: 230px;
+            }
+
+            .pro_image{
+                display: flex;
+                justify-content: center;
+                gap: 250px;
+            }
+
+            .pro_image figcaption{
+                font-size: 22px;
+                background-color: rgb(204, 201, 201);
+                height: 55px;
+                padding: 5px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-weight: bold;
+            }
+/* attribute for three images in class = pro_image End*/
+
+           .edu_list{
+            font-size: 25px;
             font-family: 'Times New Roman', Times, serif;
             line-height: 25px;
+            /* border: solid; */
+            margin-left: 900px;
+            margin-right: 200px;
            }
 
            #Pro{
             margin-top: 120px;
            }
-           
-           figcaption{
-            background-color: rgb(196, 191, 191);
+          
+           footer{
+            margin-top: 100px;
            }
-    
+           .footer_personal{
+            height: 400px;
+            width: 500px;
+            margin-left: 200px;
+            margin-bottom: 50px;
+            /* border: solid; */
+           }
+
+           .footer_personal p{
+            font-size: 25px;
+            padding-left: 50px;
+            line-height: 50px;
             
+           }
+            
+           .footer_contact{
+            float: right;
+            height: 400px;
+            width: 800px;
+            padding-top: 5px;
+            /* border: solid; */
+            margin-right: 300px;
+           }
+
+           .footer_form{
+            height: 300px;
+            width: 700px;
+            /* border: solid; */
+            font-size: 25px;
+            line-height: 70px;
+            padding-left: 100px;
+           }
         </style>
     </head>
    <!--  -->
@@ -150,8 +186,8 @@
            
        
        <div class = "Edu" id = "Edu">
-            <h1>Education</h1>
-            <ul class = "history_list">
+            <h1 style="border: solid;margin-left: 900px;margin-right: 200px;">Education</h1>
+            <ul class = "edu_list">
                 <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
                 <li>Master of Arts in Geography - May 2019</li>
                 <li>Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
@@ -164,19 +200,53 @@
                 <figure>
                     <img src="Images\gisciences.png" alt=""> 
                     <figcaption>GIScience</figcaption>
+                </figure> 
 
+                <figure>
                     <img src="Images\statistics.png" alt="">
                     <figcaption>Stiatstics</figcaption>
-
+                </figure> 
+                
+                <figure>
                     <img src="Images\webmap.png" alt="">
                     <figcaption>Web Mapping</figcaption>
-                </figure>               
+                </figure>
             </div>
        </div>
         
-    <footer>
-        <p>Yanan Wu</p>
-        <p><a href="mailto:YanaWu@clark.edu">YanaWu@clarku.edu</a></p>
+    <footer style="background-color: rgb(162, 223, 235); height: 400px;">
+        <div style="float: left;" class="footer_personal">  
+            <h2 style="font-weight: bold;font-size: 35px;text-align: center;">CONTACT</h2>
+            <p>950 Main St,<br> Worcester, MA 01610</p>
+            <p><a href="mailto:YanaWu@clark.edu">YanaWu@clarku.edu</a></p>
+            <p>&copy; 2024 Yanan Wu. All rights reserved.</p>
+        </div>
+
+        <div class="footer_contact">
+            <h2 style="font-weight: bold;font-size: 35px;text-align: center;">CONTACT ME</h2>
+            <div class="footer_form">
+                <form action=""></form>
+                <label for="">Name *</label>
+                <input type="text">
+
+                <form action=""></form>
+                <label for="">Email *</label>
+                <input type="text">
+
+                <form action=""></form>
+                <label for="">Subject</label>
+                <input type="text">
+
+                <form action=""></form>
+                <label for="">Message</label>
+                <input type="text">
+            </div>
+        
+        </div>
+    
+        
+        
+
     </footer>
     </body>
 
