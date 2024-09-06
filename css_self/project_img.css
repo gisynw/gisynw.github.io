@@ -1,0 +1,28 @@
+/* attribute for three images in class = pro_image Start*/
+
+#Pro{
+    margin-top: 120px;
+   }
+
+.pro_image img{
+    width: 270px;
+    height: 230px;
+}
+
+.pro_image{
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+.pro_image figcaption{
+    font-size: 22px;
+    background-color: rgb(204, 201, 201);
+    height: 55px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+/* attribute for three images in class = pro_image End*/

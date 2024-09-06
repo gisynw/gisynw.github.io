@@ -63,7 +63,7 @@
             margin-left: 200px;
             margin-top: 100px;
             margin-right: 200px;
-            border: solid;
+            /* border: solid; */
             height: 600px;
            }
 /* Intro photo End */
@@ -73,33 +73,9 @@
             margin-right: 200px;
             margin-top: 100px;
             margin-left: 900px;
-            border: solid;
+            /* border: solid; */
            }
 /* Intro About me End */
-
-/* attribute for three images in class = pro_image Start*/
-            .pro_image img{
-                width: 270px;
-                height: 230px;
-            }
-
-            .pro_image{
-                display: flex;
-                justify-content: center;
-                gap: 250px;
-            }
-
-            .pro_image figcaption{
-                font-size: 22px;
-                background-color: rgb(204, 201, 201);
-                height: 55px;
-                padding: 5px;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                font-weight: bold;
-            }
-/* attribute for three images in class = pro_image End*/
 
            .edu_list{
             font-size: 25px;
@@ -110,10 +86,6 @@
             margin-right: 200px;
            }
 
-           #Pro{
-            margin-top: 120px;
-           }
-          
            footer{
             margin-top: 100px;
            }
@@ -164,16 +136,17 @@
             width: 150px;
            }
         </style>
+        <!-- insert external css -->
         <link rel="stylesheet" href="css_self/present.css">
+        <link rel="stylesheet" href="css_self/project_img.css">
     </head>
 
    <!--  -->
     <body>
-
        <div>
         <nav>
             <ul>
-                <li> <a href="#Intro">Introduction</a></li>
+                <li> <a href="#intro">Introduction</a></li>
                 <li> <a href="#Edu">Education</a></li>
                 <li><a href="#Pro">Projects</a></li>
             </ul>
@@ -202,14 +175,14 @@
            
        
        <div class = "Edu" id = "Edu">
-            <h1 style="border: solid;margin-left: 900px;margin-right: 200px;">Education</h1>
+            <h1 style="margin-left: 900px;margin-right: 200px;">Education</h1>
             <ul class = "edu_list">
                 <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
                 <li>Master of Arts in Geography - May 2019</li>
                 <li>Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
             </ul>
        </div>
-       
+       <!-- below css from project_img.css -->
        <div id = "Pro">
             <h1>Projects</h1>
             <div class = "pro_image">
@@ -231,7 +204,7 @@
                 </figure>
             </div>
        </div>
-       
+       <!-- below css from present.css -->
        <div>
         <h1>Presentation</h1>
         <div class="gallery">
