@@ -215,7 +215,9 @@
                 </figure>
             </div>
        </div>
-        
+    
+    
+
     <footer style="background-color: rgb(162, 223, 235); height: 400px;">
         <div style="float: left;" class="footer_personal">  
             <h2 style="font-weight: bold;font-size: 35px;text-align: center;">CONTACT</h2>
@@ -243,13 +245,29 @@
                 <label for="">Message</label>
                 <input type="text">
             </div>
-        
         </div>
-    
-        
-        
-
     </footer>
+
+    <button id ="backtoTop">Back To Top</button>
+    <script>
+        // get the button
+        const backButton = document.getElementById('backtoTop')
+        // show the button when scrolled down 20px from the top
+        window.onscroll = function(){
+            if(document.body.scrollTop >20 || document.documentElement.scrollTop >20){
+                backButton.style.display = 'block';
+            }else{
+                backButton.style.display = None
+            }
+        };
+
+        backButton.onclick = function(){
+            window.scrollTo({
+                top: 0,
+                behavior:'smooth'
+            })
+        }
+   </script>
     </body>
 
 </html>
