@@ -149,8 +149,24 @@
             line-height: 70px;
             padding-left: 100px;
            }
+
+           #backtoTop{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border: solid;
+            background-color: rgb(206, 202, 202);
+            border-radius: 10px;
+            font-size: 20px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 150px;
+           }
         </style>
+        <link rel="stylesheet" href="css_self/present.css">
     </head>
+
    <!--  -->
     <body>
 
@@ -215,8 +231,32 @@
                 </figure>
             </div>
        </div>
-    
-    
+       
+       <div>
+        <h1>Presentation</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Images\presentation\aag_denver.jpg" alt="" class="gallery-img">
+                <figcaption class="caption">AAG, Denver</figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="Images\presentation\autocarto.jpg" alt="" class="gallery-img">
+                <figcaption class="caption">AutoCarto, Redlands</figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="Images\presentation\hawaii.jpg" alt="" class="gallery-img">
+                <figcaption class="caption">AAG, Honolulu</figcaption>
+            </div>
+        </div>
+       </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script src="js_self/present.js"></script>
 
     <footer style="background-color: rgb(162, 223, 235); height: 400px;">
         <div style="float: left;" class="footer_personal">  
@@ -247,8 +287,12 @@
             </div>
         </div>
     </footer>
-
-    <button id ="backtoTop">Back To Top</button>
+     
+    <div>
+        <button id ="backtoTop">Back To Top</button>
+    </div>
+    
+    
     <script>
         // get the button
         const backButton = document.getElementById('backtoTop')
@@ -260,7 +304,7 @@
                 backButton.style.display = None
             }
         };
-
+        // click button
         backButton.onclick = function(){
             window.scrollTo({
                 top: 0,
