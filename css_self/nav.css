@@ -1,22 +1,22 @@
 /* Navigation link Start*/
-nav ul li{
+/* nav ul li{
     list-style: none;
     display: inline-block;
     line-height: 2;
     margin-right: 50px;
-   } 
+   }  */
 
-    nav{
-    justify-content: flex-end;
+    #nva_bar nav ul{
+    justify-content: space-around;
     display: flex;
     }
     
    nav ul li a{
     font-size: 30px;
-    color: rgb(104, 104, 215);
+    color: rgb(44, 44, 216);
    } 
    
    nav ul li a:hover{
-    color: black;
+    color: rgb(14, 14, 14);
    }
 /* Navigation link End*/
