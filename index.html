@@ -31,28 +31,7 @@
              font-weight: bold;
              text-decoration: none;
             }
-/* Navigation link Start*/
-            nav ul li{
-            list-style: none;
-            display: inline-block;
-            line-height: 2;
-            margin-right: 50px;
-           } 
 
-            nav{
-            justify-content: flex-end;
-            display: flex;
-            }
-            
-           nav ul li a{
-            font-size: 30px;
-            color: rgb(104, 104, 215);
-           } 
-           
-           nav ul li a:hover{
-            color: black;
-           }
-/* Navigation link End*/
             
             .headshot{
                 border-radius: 30%
@@ -107,10 +86,20 @@
         <link rel="stylesheet" href="css_self/footer.css">
         <link rel="stylesheet" href="css_self/google.css">
         <link rel="stylesheet" href="css_self/luckybutton.css">
+        <!-- <link rel="stylesheet" href="css_self/nav.css"> -->
     </head>
 
    <!--  -->
     <body>
+        
+        <nav>
+            <ul>
+                <li><a href="#"> Introduction</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </nav>
+
        <div>
         <nav>
             <ul>
@@ -121,6 +110,7 @@
         </nav>
        </div>
         
+      
        <div class="intro" id = "intro">
             <img class = 'headshot' src="Images\headshot.jpg" alt="" width="500" height="390">
             <p style="text-align: center; line-height: 25px;">Visting Assistant Professor <br>
@@ -152,6 +142,9 @@
             </ul>
        </div>
        <!-- below css from project_img.css -->
+
+       
+
        <div id = "Pro">
             <div id="pro_h1">
                 <h1>Projects</h1>
@@ -166,8 +159,11 @@
                 </figure> 
 
                 <figure>
-                    <img src="Images\statistics.png" alt="">
-                    <figcaption>Statistics</figcaption>
+                    <a href="statistics.html" target="_blank">
+                        <img src="Images\statistics.png" alt="">
+                        <figcaption>Statistics</figcaption>
+                    </a>
+                    
                 </figure> 
                 
                 <figure>

@@ -1,0 +1,22 @@
+/* Navigation link Start*/
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 2;
+    margin-right: 50px;
+   } 
+
+    nav{
+    justify-content: flex-end;
+    display: flex;
+    }
+    
+   nav ul li a{
+    font-size: 30px;
+    color: rgb(104, 104, 215);
+   } 
+   
+   nav ul li a:hover{
+    color: black;
+   }
+/* Navigation link End*/
