@@ -2,8 +2,15 @@
 
 #Pro{
     margin-top: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* border: solid; */
    }
 
+#pro_h1{
+    text-align: center;
+    /* border: solid; */
+}
 .pro_image img{
     width: 270px;
     height: 230px;
