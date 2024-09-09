@@ -106,6 +106,7 @@
         <link rel="stylesheet" href="css_self/project_img.css">
         <link rel="stylesheet" href="css_self/footer.css">
         <link rel="stylesheet" href="css_self/google.css">
+        <link rel="stylesheet" href="css_self/luckybutton.css">
     </head>
 
    <!--  -->
@@ -245,8 +246,13 @@
         }
    </script>
     
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmfntKLSTrfrDEkhSz5kFYD5-MjhFLpcmzNDv3TN2L6LyxTg/viewform?embedded=true" 
-    width="750" height="642" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <button onclick = getmessage()>Get your lucky words</button>
+    <p id = "lucky"></p>
+
+    <script>function getmessage(){
+        document.getElementById('lucky').textContent = 'best one';
+    }
+    </script>
 
     </body>
 </html>
