@@ -1,22 +1,30 @@
 /* Navigation link Start*/
-/* nav ul li{
-    list-style: none;
-    display: inline-block;
-    line-height: 2;
-    margin-right: 50px;
-   }  */
+    nav ul{
+    justify-content: flex-end;
+    display: inline-flex;
 
-    #nva_bar nav ul{
-    justify-content: space-around;
-    display: flex;
     }
     
-   nav ul li a{
-    font-size: 30px;
-    color: rgb(44, 44, 216);
-   } 
+    nav ul li{
+        list-style: none;
+        margin-right: 50px;
+        /* border: solid; */
+        
+    } 
+
+    nav ul li a{
+        font-size: 30px;
+        color: rgb(44, 44, 216);
+    } 
    
-   nav ul li a:hover{
-    color: rgb(14, 14, 14);
-   }
+    nav ul li a:hover{
+        color: rgb(14, 14, 14);
+    }
+
+    .nav_bar{
+        border: solid;
+        border-width: 10px;
+        margin-top: 100px;
+        padding-top: 50px;
+    }
 /* Navigation link End*/

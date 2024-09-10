@@ -6,61 +6,32 @@
     <title>Personal Website</title>
     
     <style>
-     h1 {color:blueviolet}
-     p {color: brown;}
+        div.ex1 {
+            width: 500px;
+            margin: auto;
+            border: 3px solid #73AD21;
+            }
+
+        div.ex2 {
+        max-width: 500px;
+        margin: auto;
+        border: 3px solid #73AD21;
+        }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h2>CSS Max-width</h2>
 
+    <div class="ex1">This div element has width: 500px;</div>
+    <br>
     
-    <section id="about">
-        <h1 style="background-color: rgb(163, 195, 48);">Welcome to My Personal Website</h1>
-        <p style="font-size: 30px;">Hi! This is my personal website where you can learn more about my research, teaching, and other professional activities.</p>
-        <p style="background-image: url('Images/clark.jpg')">Founded in 1887 with a large endowment from <br>
-            its namesake Jonas Gilman Clark, a prominent businessman,<br>
-             Clark was one of the first modern research universities in <br>
-             the United States</p>
-        <a href="https://www.clarku.edu/" target ="_black"
-        >Clark University</a> <br><br>
-
-
-        <a href="https://www.clarku.edu/" target ="_black">
-            <img src="Images\clark.jpg" alt="clark">
-        </a>
-
-        
-    </section>
-
-    <section id="research">
-        <h2>Research</h2>
-        <p>Details about your research interests, publications, and projects can go here.</p>
-    </section>
-
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>Information about the courses you teach, including syllabi, assignments, and other resources.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Double. All rights reserved.</p>
-    </footer>
+    <div class="ex2">This div element has max-width: 500px;</div>
+    
+    <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+    the two divs!</p>
+    
 </body>
 </html>
 
