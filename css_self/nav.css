@@ -1,13 +1,18 @@
 /* Navigation link Start*/
+
+    .nav_bar{
+        background-color: rgb(190, 218, 218);
+        /* border: solid; */
+    } 
     nav ul{
     justify-content: flex-end;
     display: inline-flex;
-
     }
     
     nav ul li{
         list-style: none;
         margin-right: 50px;
+        /* border: solid; */
         /* border: solid; */
         
     } 
