@@ -19,7 +19,7 @@
 .pro_image{
     display: flex;
     justify-content: center;
-    gap: 250px;
+    gap: 250px;  
 }
 
 .pro_image figcaption{
@@ -31,5 +31,5 @@
     align-items: center;
     display: flex;
     font-weight: bold;
-}
+} 
 /* attribute for three images in class = pro_image End*/

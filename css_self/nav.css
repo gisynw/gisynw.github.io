@@ -3,6 +3,7 @@
     .nav_bar{
         background-color: rgb(190, 218, 218);
         /* border: solid; */
+        
     } 
     nav ul{
     justify-content: flex-end;
@@ -27,9 +28,13 @@
     }
 
     .nav_bar{
-        border: solid;
-        border-width: 10px;
-        margin-top: 100px;
+        border:solid;
+        margin-top: 200px;
         padding-top: 50px;
+        /* border-width: 10px;
+        margin-top: 100px;
+        padding-top: 50px; */
     }
+
+
 /* Navigation link End*/

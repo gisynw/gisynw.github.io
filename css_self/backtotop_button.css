@@ -1,0 +1,13 @@
+#backtoTop{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: solid;
+    background-color: rgb(206, 202, 202);
+    border-radius: 10px;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+   }
