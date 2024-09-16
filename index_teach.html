@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>my website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+         
+        <style>
+            header {
+            font-size: 30px;
+            }
+
+            h1{
+                text-align: center;
+            }
+            
+            p {color: rgb(19, 18, 18);
+               font-family: 'Times New Roman', Times, serif;
+               font-size: 25px;
+            }
+
+            a{
+             color: rgb(13, 13, 13);
+             font-weight: bold;
+             text-decoration: none;
+            }
+           
+        </style>
+        <!-- insert external css -->
+        <link rel="stylesheet" href="./css_self/intro_photo.css">
+        <link rel="stylesheet" href="./css_self/nav.css">
+        <link rel="stylesheet" href="css_self/education_li.css">
+        <link rel="stylesheet" href="css_self/present.css">
+        <link rel="stylesheet" href="css_self/project_img.css">
+        <link rel="stylesheet" href="css_self/footer.css">
+        <link rel="stylesheet" href="css_self/google.css">
+        <link rel="stylesheet" href="css_self/luckybutton.css">
+
+        <link rel="stylesheet" href="css_self/backtotop_button.css">
+
+       
+    </head>
+
+   <!--  -->
+    <body>
+
+       <div class = "nav_bar">
+        <nav>
+            <ul>
+                <li> <a href="#intro">Introduction</a></li>
+                <li> <a href="#Edu">Education</a></li>
+                <li> <a href="#Pro">Projects</a></li>
+            </ul>
+            
+            <div class="nav_bar_header">
+                <header><h1 class="fade_in">Spatial Minds, Data Discoveries</h1>
+                         <h2 class="fade_in">Yanan Wu</h2>       
+                </header>
+            </div>
+            
+        </nav>
+       </div>
+        
+       <script>
+        const x = 3
+        const y = 4
+        const b = x+y
+        
+       </script>
+       <div class="intro">
+            <img class = 'headshot' src="Images\headshot.jpg" alt="" width="500" height="390">
+            <p style="text-align: center; line-height: 25px;">Visting Assistant Professor <br>
+                Geography Department, Clark University</p>
+        </div>
+
+        <div id="p_intro">
+            <h1>About Me</h1>
+            <p> Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the <a href="https://www.clarku.edu/departments/geography/" class="lk">Department of Geography</a>
+                at <a href="https://www.clarku.edu/" class="lk">Clark University</a> . 
+                I hold a Ph.D. in <a href="https://epps.utdallas.edu/about/programs/geospatial-information-sciences/" class="lk">Geospatial Information Sciences</a> 
+                from the University of Texas at Dallas, an M.A. in Geography from Binghamton University, 
+                and a B.S. from Xi'an University of Science and Technology.</p> 
+            <p>As a geographer, my expertise lies in transportation geography, social geography, 
+                spatial-temporal analysis, and GIScience. My recent research has focused on analyzing emergency response times for vehicles in Dallas, 
+                where I utilized fine-grained spatial units to predict areas with extended response durations. This work is part of my broader interest in
+                leveraging geographic information systems to address real-world challenges in urban environments.</p>
+        </div>
+     
+           
+       
+       <div class = "Edu" id = "Edu" >
+            <h1 style="margin-left: 900px;margin-right: 200px;">Education</h1>
+            <ul class = "edu_list">
+                <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
+                <li>Master of Arts in Geography - May 2019</li>
+                <li>Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
+            </ul>
+       </div>
+       <!-- below css from project_img.css -->
+
+       
+
+       <div id = "Pro">
+            <div id="pro_h1">
+                <h1>Projects</h1>
+            </div>
+            
+            <div class = "pro_image">
+                <figure>
+                    <a href="projects.html">
+                        <img src="Images\gisciences.png" alt=""> 
+                        <figcaption>GIScience</figcaption>
+                    </a>
+                </figure> 
+
+                <figure>
+                    <a href="statistics.html" target="_blank">
+                        <img src="Images\statistics.png" alt="">
+                        <figcaption>Statistics</figcaption>
+                    </a>
+                    
+                </figure> 
+                
+                <figure>
+                    <img src="Images\webmap.png" alt="">
+                    <figcaption>Web Mapping</figcaption>
+                </figure>
+            </div>
+       </div>
+       <!-- below css from present.css -->
+       <div>
+        <h1>Presentation</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Images\presentation\aag_denver.jpg" alt="" class="gallery-img">
+                <figcaption class="caption">AAG, Denver</figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="Images\presentation\autocarto.jpg" alt="" class="gallery-img">
+                <figcaption class="caption">AutoCarto, Redlands</figcaption>
+            </div>
+            <div class="gallery-item">
+                <img src="Images\presentation\hawaii.jpg" alt="" class="gallery-img">
+                <figcaption class="caption">AAG, Honolulu</figcaption>
+            </div>
+        </div>
+       </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script src="js_self/present.js"></script>
+
+    <footer style="background-color: rgb(162, 223, 235); height: 400px;">
+        <div style="float: left;" class="footer_personal">  
+            <h2 style="font-weight: bold;font-size: 35px;text-align: center;">CONTACT</h2>
+            <p>950 Main St,<br> Worcester, MA 01610</p>
+            <p><a href="mailto:YanaWu@clark.edu">YanaWu@clarku.edu</a></p>
+            
+            <p><small>&copy;
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> Your name <br>
+                All rights reserved</span>
+            </small></p>
+
+        </div>
+         <div id = 'google_footer'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5906.480731489998!2d-71.82711302381529!3d42.25203924191911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e38aa31dacf93f%3A0x55302c069e5d1e52!2sClark%20University!5e0!3m2!1sen!2sus!4v1726460643474!5m2!1sen!2sus" 
+            style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+    </footer>
+     
+    <div>
+        <button id ="backtoTop">Back To Top</button>
+    </div>
+    
+    
+    <script>
+        // get the button
+        const backButton = document.getElementById('backtoTop')
+        // show the button when scrolled down 20px from the top
+        window.onscroll = function(){
+            if(document.body.scrollTop >20 || document.documentElement.scrollTop >20){
+                backButton.style.display = 'block';
+            }else{
+                backButton.style.display = None
+            }
+        };
+        // click button
+        backButton.onclick = function(){
+            window.scrollTo({
+                top: 0,
+                behavior:'smooth'
+            })
+        }
+   </script>
+    
+    <button onclick = getmessage()>Get your lucky words</button>
+    <p id = "lucky"></p>
+
+    <script>function getmessage(){
+        document.getElementById('lucky').textContent = 'best one';
+    }
+    </script>
+
+    </body>
+</html>
+
