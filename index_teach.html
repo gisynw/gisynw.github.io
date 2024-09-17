@@ -45,7 +45,7 @@
 
         <link rel="stylesheet" href="css_self/backtotop_button.css">
         
-        <script src = 'js_self/backtoTop.js'></script>
+        
        
     </head>
 
@@ -178,38 +178,18 @@
     </footer>
      
     <p id = "myloc"></p>
-     
-    <script>
-    const city = 'Worcester'
-    const state = 'MA'
-
-    function displayLocation() {
-        document.getElementById("myloc").innerHTML = 'my location is ' + city + ', ' + state;
-    }
-    displayLocation();
-
-    function greet(){
-        document.write("hello JS")
-        }
-    greet();
-    </script>
-
-   
-
-    </script>
-
-    <div>
+    
+    <div id = 'Top_button'>
         <button id ="backtoTop">Back To Top</button>
     </div>
-    
-    <button onclick = getmessage()>Get your lucky words</button>
+    <script src = 'js_self/backtoTop.js'></script>
+
+    <div>
+        
+    </div>
+    <button id = "luckybutton" onclick = getmessage() >Get your lucky words</button>
 
     <p id = "lucky"></p>
-
-    <script>function getmessage(){
-        document.getElementById('lucky').textContent = 'best one';
-    }
-    </script>
 
     </body>
 </html>
