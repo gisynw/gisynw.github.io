@@ -11,28 +11,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-         
-        <style>
-            header {
-            font-size: 30px;
-            }
-
-            h1{
-                text-align: center;
-            }
-            
-            p {color: rgb(19, 18, 18);
-               font-family: 'Times New Roman', Times, serif;
-               font-size: 25px;
-            }
-
-            a{
-             color: rgb(13, 13, 13);
-             font-weight: bold;
-             text-decoration: none;
-            }
-           
-        </style>
         <!-- insert external css -->
         <link rel="stylesheet" href="./css_self/intro_photo.css">
         <link rel="stylesheet" href="./css_self/nav.css">
@@ -42,9 +20,9 @@
         <link rel="stylesheet" href="css_self/footer.css">
         <link rel="stylesheet" href="css_self/google.css">
         <link rel="stylesheet" href="css_self/luckybutton.css">
-
+         <link rel="stylesheet" href="css_self/all_element.css">
         <link rel="stylesheet" href="css_self/backtotop_button.css">
-        
+        <link rel="stylesheet" href="css_self/nav_bk_image.css">
         
        
     </head>
@@ -61,19 +39,28 @@
             </ul>
             
             <div class="nav_bar_header">
-                <header><h1 class="fade_in">Spatial Minds, Data Discoveries</h1>
-                         <h2 class="fade_in">Yanan Wu</h2>       
+                <header class = "nav_bar_header1">
+                    <h1><span class="header_h1">Hi, I'm Yanan</span> <br>
+                         <span class="nav_bar_header_p">Spatial Minds, Data Discoveries</span>
+                    </h1>
                 </header>
+
+                <header class = "nav_bar_header2">
+                    <h1><span class="header_h1">I'm a Geospatial Scientist</span> <br>
+                        <span class="nav_bar_header_p">who merges the world of geography and data</span>
+                   </h1>
+                </header>
+
             </div>
             
         </nav>
        </div>
         
-       <div class="intro">
-            <img class = 'headshot' src="Images\headshot.jpg" alt="" width="500" height="390">
-            <p style="text-align: center; line-height: 25px;">Visting Assistant Professor <br>
+       <aside class="intro">
+            <img class = 'headshot' src="Images\headshot.jpg" alt="">
+            <p style="text-align: center; line-height: 5rem;">Yanan Wu <br>Visting Assistant Professor <br>
                 Geography Department, Clark University</p>
-        </div>
+       </aside>
 
         <div id="p_intro">
             <h1>About Me</h1>
@@ -91,7 +78,7 @@
            
        
        <div class = "Edu" id = "Edu" >
-            <h1 style="margin-left: 900px;margin-right: 200px;">Education</h1>
+            <h1>Education</h1>
             <ul class = "edu_list">
                 <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
                 <li>Master of Arts in Geography - May 2019</li>
@@ -187,6 +174,8 @@
     
     <button id = "luckybutton" onclick = getmessage() >Get your lucky words</button>
     <p id = "lucky"></p>
+
+    <script src="js_self/header_fade_in.js"></script>
 
     </body>
 </html>A

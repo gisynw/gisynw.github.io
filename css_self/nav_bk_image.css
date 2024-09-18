@@ -1,0 +1,28 @@
+.nav_bar_header{
+    margin-top: 23rem;
+    border: solid;
+    position: relative;
+ }
+ .nav_bar_header1, .nav_bar_header2 {
+     position: absolute; /* Position the headers on top of each other */
+     top: 0;
+     left: 0;
+     right: 0;
+     opacity: 0; /* Make invisible */
+     transition: opacity 1s ease-in-out;
+ }
+   
+.nav_bar_header1.show, .nav_bar_header2.show {
+    opacity: 1; /* Make visible */
+}
+
+
+ .header_h1{
+     color: rgb(250, 250, 250);
+     font-size: 10rem;
+ }
+
+.nav_bar_header_p{
+    font-size: 5rem;
+    color:bisque;
+}
