@@ -15,7 +15,7 @@ for (let i = 0; i < images.length; i++) {
         modalImg.src = this.src;
         // captionText.innerHTML = this.alt;
         // explanationText.innerHTML = this.alt
-        h1text.innerHTML = "More details about " + this.alt
+        h1text.innerHTML = this.alt
     }
 }
 
