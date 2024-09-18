@@ -1,6 +1,6 @@
 .nav_bar_header{
     margin-top: 23rem;
-    border: solid;
+    /* border: solid; */
     position: relative;
  }
  .nav_bar_header1, .nav_bar_header2 {
@@ -10,6 +10,7 @@
      right: 0;
      opacity: 0; /* Make invisible */
      transition: opacity 1s ease-in-out;
+     /* border: solid; */
  }
    
 .nav_bar_header1.show, .nav_bar_header2.show {
@@ -23,6 +24,7 @@
  }
 
 .nav_bar_header_p{
-    font-size: 5rem;
+    font-size: 3.5rem;
     color:bisque;
+    font-weight: normal;
 }
