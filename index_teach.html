@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>my website</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="css_self/backtotop_button.css">
         <link rel="stylesheet" href="css_self/nav_bk_image.css">
         <link rel="stylesheet" href="css_self/project_image_flip.css">
-        
+        <link rel="stylesheet" href="css_self/responsive_nav.css">
        
     </head>
 
@@ -35,40 +35,36 @@
 
        <div class = "nav_bar">
             <nav>
-
                 <ul class="nav_bar_ul">
-                    <li> <a href="#intro">Introduction</a></li>
+                    <li> <a href="" class="symbol">Yanan Wu</a></li>
+                    <li> <a href="#intro">About me</a></li>
                     <li> <a href="#Edu">Education</a></li>
                     <li> <a href="#Pro">Projects</a></li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <li> <a href="#Pre">Presentation</a></li>
+                    <li> <a href="#Con">Contact</a></li>
+                    <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
                         <i class="fa fa-bars"></i>
-                      </a>
+                    </a></li>
+                   
                 </ul>
-                
-                
+            </nav>   
 
-                <div class="nav_bar_header">
-                    <header class = "nav_bar_header1">
-                        <h1><span class="header_h1">Hi, I'm Yanan</span> <br>
-                            <span class="nav_bar_header_p">Spatial Minds, Data Discoveries</span>
-                        </h1>
-                    </header>
-
-                    <header class = "nav_bar_header2">
-                        <h1><span class="header_h1">I'm a Geospatial Scientist</span> <br>
-                            <span class="nav_bar_header_p">who merges the world of geography and data</span>
+            <div class="nav_bar_header">
+                <header class = "nav_bar_header1">
+                    <h1><span class="header_h1">Hi, I'm Yanan</span> <br>
+                        <span class="nav_bar_header_p">Spatial Minds, Data Discoveries</span>
                     </h1>
-                    </header>
+                </header>
 
-                </div>
-                
-            </nav>
+                <header class = "nav_bar_header2">
+                    <h1><span class="header_h1">I'm a Geospatial Scientist</span> <br>
+                        <span class="nav_bar_header_p">who merges the world of geography and data</span>
+                </h1>
+                </header>
 
-          
-       </div>
+            </div>
+        </div>  
 
-       
-        
        <aside class="intro">
             <img class = 'headshot' src="Images\headshot.jpg" alt="">
             <p style="text-align: center; line-height: 5rem;">Yanan Wu <br>Visting Assistant Professor <br>
@@ -136,7 +132,7 @@
             </div>
        </div>
        <!-- below css from present.css -->
-       <div>
+       <div id="Pre">
         <h1>Presentation</h1>
         <div class="gallery">
             <div class="gallery-item">
@@ -165,7 +161,7 @@
         
 
     <footer style="background-color: rgb(162, 223, 235); height: 35rem;">
-        <div style="float: left;" class="footer_personal">  
+        <div style="float: left;" class="footer_personal" id = "Con">  
             <h2 style="font-weight: bold;font-size: 2.5rem;text-align: center;">CONTACT</h2>
             <p>950 Main St,<br> Worcester, MA 01610</p>
             <p><a href="mailto:YanaWu@clark.edu">YanaWu@clarku.edu</a></p>
@@ -184,8 +180,6 @@
          </div>
 
     </footer>
-     
-    <p id = "myloc"></p>
     
     <div id = 'Top_button'>
         <button id ="backtoTop">Back To Top</button>
@@ -199,7 +193,7 @@
     <script src="js_self/header_fade_in.js"></script>
     <script src = 'js_self/backtoTop.js'></script>
     <script src="js_self/present_test.js"></script>
-
+    <script src="js_self/responsive_nav.js"></script>
     </body>
 </html>A
 

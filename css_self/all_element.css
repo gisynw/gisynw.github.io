@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    font-size: 1.1rem;
+    font-size: 16px;
 }
 
 h1{
@@ -20,7 +20,7 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+a:not(.symbol):hover{
     color: rgb(102, 101, 101);
 }
 

@@ -12,16 +12,14 @@
         border: solid;
 
     } 
-    
-    
 
-    /* h1, h2 {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-      } */
+    .nav_bar_ul a.symbol{
+        font-style: italic;
+        color: #CA7D75;
+    }
 
     .nav_bar nav ul{
-    justify-content: flex-end;
+    justify-content:left;
     display: flex;
     padding: 1.4rem 1.4rem 1.4rem 1.4rem;
     }
@@ -36,8 +34,8 @@
         color: rgb(239, 239, 243);
     } 
    
-    nav ul li a:hover{
-        color: rgb(102, 101, 101);
+    nav ul li a:not(.symbol):hover{
+        color: rgb(169, 165, 165);
         text-decoration: underline;
         text-decoration-line: grey;
     }
