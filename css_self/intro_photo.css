@@ -7,7 +7,7 @@ float: left;
 margin-left: 14rem;
 margin-top: 7rem;
 margin-right: 14rem;
-border: solid;
+/* border: solid; */
 height: 80rem;
 }
 /* Intro photo End */
@@ -19,9 +19,9 @@ height: 80rem;
 
 /* Intro About me Start */
 #p_intro{
-margin-right: 200px;
-margin-top: 100px;
-margin-left: 900px;
+margin-right: 14rem;
+margin-top: 5rem;
+margin-left: 75rem;
 /* border: solid; */
 }
 /* Intro About me End */

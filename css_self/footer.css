@@ -1,56 +1,38 @@
 footer{
-    margin-top: 100px;
+    margin-top: 6rem;
    }
    .footer_personal{
-    height: 400px;
-    width: 500px;
-    margin-left: 200px;
-    margin-bottom: 50px;
+    height: 30rem;
+    width: 55rem;
+    margin-left: 15rem;
+    margin-bottom: 15rem;
     /* border: solid; */
    }
 
    .footer_personal p{
-    font-size: 25px;
-    padding-left: 50px;
-    line-height: 50px;
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    line-height: 3rem;
     
-   }
-    
-   .footer_contact{
-    float: right;
-    height: 400px;
-    width: 800px;
-    padding-top: 5px;
-    /* border: solid; */
-    margin-right: 300px;
-   }
-
-   .footer_form{
-    height: 300px;
-    width: 700px;
-    /* border: solid; */
-    font-size: 25px;
-    line-height: 70px;
-    padding-left: 100px;
    }
 
    #google_footer{
     float: right;
     border: solid;
-    margin-right: 300px;
-    height: 400px;
-    width: 600px;
+    margin-right: 15rem;
+    height: 40rem;
+    width: 60rem;
    }
 
    #google_footer iframe{
-    height: 400px;
-    width: 600px;
+    height: 40rem;
+    width: 60rem;
    }
 
    #Top_button{
       /* border: solid; */
       justify-content: center;
       display: flex;
-      margin: 10px 10px 10px 10px;
-      padding: 10px 10px 10px 10px;
+      margin: 3rem 3rem 3rem 3rem;
+      padding: 3rem 3rem 3rem 3rem;
    }

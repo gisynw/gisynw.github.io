@@ -1,6 +1,7 @@
 #luckybutton{
-    width: 150px;
-    height: 80px;
-    margin-bottom: 10px;
-    border: solid;
+    width: 25rem;
+    height: 10rem;
+    margin-bottom: 5rem;
+    /* border: solid;
+    border-color: red; */
 }
