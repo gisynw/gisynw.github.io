@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="css_self/nav_bk_image.css">
         <link rel="stylesheet" href="css_self/project_image_flip.css">
         <link rel="stylesheet" href="css_self/responsive_nav.css">
+        <link rel="stylesheet" href="css_self/change_bk.css">
        
     </head>
 
@@ -61,8 +62,8 @@
                         <span class="nav_bar_header_p">who merges the world of geography and data</span>
                 </h1>
                 </header>
-
             </div>
+            
         </div>  
 
        <aside class="intro">
@@ -73,6 +74,8 @@
 
         <div id="p_intro">
             <h1>About Me</h1>
+            <button class = 'change_bk' onclick="change_bk_js()"  style="height: 80px;font-size: 50px;">Click here to highlight my past experience</button>
+
             <p> Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the <a href="https://www.clarku.edu/departments/geography/" class="lk">Department of Geography</a>
                 at <a href="https://www.clarku.edu/" class="lk">Clark University</a> . 
                 I hold a Ph.D. in <a href="https://epps.utdallas.edu/about/programs/geospatial-information-sciences/" class="lk">Geospatial Information Sciences</a> 
@@ -179,19 +182,21 @@
 
     </footer>
     
-    <div id = 'Top_button'>
+    <div>
         <button id ="backtoTop">Back To Top</button>
     </div>
-    
 
-    
-    <button id = "luckybutton" onclick = getmessage() >Get your lucky words</button>
+
+    <button onclick= "this.textContent = Date()" style="height: 100px;font-size: large;">The current date and time</button>
+
+    <button onclick = "document.getElementById('lucky').textContent='You are the BEST One'";>Get your lucky words</button>
     <p id = "lucky"></p>
 
     <script src="js_self/header_fade_in.js"></script>
-    <script src = 'js_self/backtoTop.js'></script>
+    <script src = 'js_self/footer.js'></script>
     <script src="js_self/present_test.js"></script>
     <script src="js_self/responsive_nav.js"></script>
+    <script src="js_self/change_bk.js"></script>
     </body>
 </html>A
 

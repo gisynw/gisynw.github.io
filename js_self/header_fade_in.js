@@ -4,7 +4,7 @@ window.onload = function() {
     const header2 = document.querySelector(".nav_bar_header2");
 
 
-    let isHeader1Visible = true; // Start with header1 visible
+    let isHeader1Visible = true; // Intialize the variable
  
     // Function to toggle between headers
     function toggleHeaders() {
@@ -22,7 +22,7 @@ window.onload = function() {
         // Switch between headers after a delay
         isHeader1Visible = !isHeader1Visible;
 
-        // Set up the cycle to repeat every 3 seconds (1s fade + 2s visible)
+        // Set up the cycle to repeat every 4 seconds (1s fade + 2s visible)
         setTimeout(toggleHeaders, 4000);
     }
 

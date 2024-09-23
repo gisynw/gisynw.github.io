@@ -6,41 +6,34 @@
     <title>Personal Website</title>
     
     <style>
-        div.ex1 {
-            width: 500px;
-            margin: auto;
-            border: 3px solid #73AD21;
-            }
+    
+    h1{
+        font-size: 150px;
+    }
 
-        div.ex2 {
-        max-width: 500px;
-        margin: auto;
-        border: 3px solid #73AD21;
-        }
+    .nav_bar_header1, .nav_bar_header2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade */
+    }
+
+    .show {
+    opacity: 1; /* Make visible when the .show class is added */
+    color: blueviolet;
+    }
+
     </style>
 </head>
 
 <body>
 
-    <h2>CSS Max-width</h2>
-
-    <div class="ex1">This div element has width: 500px;</div>
-    <br>
+    <h1 class="nav_bar_header1">Hi, I'm Yanan</h1>
+    <h1 class = "nav_bar_header2">I'm a Visting AP</h1>
     
-    <div class="ex2">This div element has max-width: 500px;</div>
-    
-    <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
-    the two divs!</p>
-     
-    <P id="location"></P>
-    
-    <script>
-        const city = "Worcester"
-        const State = "MA"
-
-        document.getElementById("location").innerHTML = "My location is"+ city + State
-    </script>
-    
+    <script src="js_self/header_fade_in.js"></script>
 </body>
 </html>
 
