@@ -24,16 +24,86 @@
     opacity: 1; /* Make visible when the .show class is added */
     color: blueviolet;
     }
+    
+    .gallery-img:hover{
+    transform: scale(1.2);
+    }
+
+    .myPop{
+    display: None;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    border: solid;
+    }
+
+    .close{
+        position: absolute;
+        top: 5rem;
+        right: 10rem;
+        color: #0d27d0;
+        font-size: 10rem;
+        font-weight: bold;
+    }
+
+    .close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
 
     </style>
 </head>
 
 <body>
 
-    <h1 class="nav_bar_header1">Hi, I'm Yanan</h1>
-    <h1 class = "nav_bar_header2">I'm a Visting AP</h1>
-    
-    <script src="js_self/header_fade_in.js"></script>
+    <div class="gallery-item">
+        <img src="Images\presentation\aag_denver.jpg" 
+        alt="Association of American Geographers Conference" class="gallery-img">
+        <figcaption style="font-size: 50px;">AAG Conference</figcaption>
+    </div>
+
+    <div  class="myPop">
+        <span class="close">&times;</span>
+        <img id="img_pop" style="margin-top: 10rem;">
+        <h1 id = "h1_pop"></h1>
+    </div>
+   
+
+    <script>
+        // Get the image and insert it inside the modal
+        const images = document.getElementsByClassName("gallery-img");
+        const captionText = document.getElementById("caption");
+        
+        const pop_w = document.getElementsByClassName("myPop")[0];
+        const pop_Img = document.getElementById("img_pop");
+        const pop_h1 = document.getElementById("h1_pop")
+
+        // Loop through all gallery images
+        for (let i = 0; i < images.length; i++) {
+            images[i].onclick = function() {
+                pop_w.style.display = "block";
+                pop_Img.src = this.src;
+                pop_h1.innerHTML = this.alt
+            }
+        }
+
+        // // Get the <span> element that closes the modal
+        // const close_button = document.getElementsByClassName("close")[0];
+
+        // // When the user clicks on <span> (x), close the modal
+        // close_button.onclick = function() {
+        //     pop_w.style.display = "none";
+        // }
+    </script>
+
 </body>
 </html>
 
