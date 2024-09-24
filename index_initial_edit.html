@@ -63,8 +63,42 @@
 </head>
 
 <body>
+    <div class="nav_bar_header1"><h1>Hello</h1></div>
+    <div class="nav_bar_header2"><h1>I'm a Geospatial Scientist</h1></div>
 
-    <div class="gallery-item">
+    <script>
+        window.onload = function() {
+        // Get headers
+        const header1 = document.querySelector(".nav_bar_header1");
+        const header2 = document.querySelector(".nav_bar_header2");
+
+        let isHeader1Visible = true; // Start with header1 visible
+
+        // Function to toggle between headers
+        function toggleHeaders() {
+            if (isHeader1Visible) {
+                // Show header1, hide header2
+                header1.classList.add("show");
+                header2.classList.remove("show");
+            } else {
+                // Show header2, hide header1
+                header2.classList.add("show");
+                header1.classList.remove("show");
+            }
+
+            // Switch to the other header for the next cycle
+            isHeader1Visible = !isHeader1Visible;
+
+            // Repeat the toggle every 4 seconds
+            setTimeout(toggleHeaders, 4000);
+        }
+
+        // Start the toggle cycle
+        toggleHeaders();
+};
+    </script>
+
+    <!-- <div class="gallery-item">
         <img src="Images\presentation\aag_denver.jpg" 
         alt="Association of American Geographers Conference" class="gallery-img">
         <figcaption style="font-size: 50px;">AAG Conference</figcaption>
@@ -80,7 +114,7 @@
     <script>
         // Get the image and insert it inside the modal
         const images = document.getElementsByClassName("gallery-img");
-        const captionText = document.getElementById("caption");
+        // const captionText = document.getElementById("caption");
         
         const pop_w = document.getElementsByClassName("myPop")[0];
         const pop_Img = document.getElementById("img_pop");
@@ -94,15 +128,7 @@
                 pop_h1.innerHTML = this.alt
             }
         }
-
-        // // Get the <span> element that closes the modal
-        // const close_button = document.getElementsByClassName("close")[0];
-
-        // // When the user clicks on <span> (x), close the modal
-        // close_button.onclick = function() {
-        //     pop_w.style.display = "none";
-        // }
-    </script>
+    </script> -->
 
 </body>
 </html>
