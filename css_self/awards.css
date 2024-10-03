@@ -1,0 +1,22 @@
+.award_li ul li{
+    font-size: 2.8rem;
+    list-style: none;
+    line-height: 4.5rem;
+}
+
+.award_li ul{
+    /* border: solid; */
+    margin-left: 5rem;
+
+}
+
+.award_li{
+    margin-left: 15rem;
+}
+
+
+#award_h1{
+ /* border: solid; */
+ margin-right: 10rem;
+ margin-top: 8rem;
+}

@@ -24,3 +24,12 @@ a:not(.symbol):hover{
     color: rgb(102, 101, 101);
 }
 
+h2{
+    text-align: center;
+    font-size: 4rem;
+}
+
+h3{
+    text-align: left;
+    font-size: 3rem;
+}

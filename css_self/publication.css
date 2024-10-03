@@ -1,0 +1,28 @@
+#publication{
+ /* border: solid; */
+ margin-top: 10rem ;
+ margin-left: 15rem;
+ margin-right: 15rem;
+ /* border: solid; */
+}
+
+#pub_title{
+    border: solid;
+    display:grid;
+    
+    
+}
+
+
+.pub_list ul li{
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+
+.pub_list ul li a{
+    font-weight: normal;
+}
+
+.pub_list ul li{
+    list-style: none;
+}
