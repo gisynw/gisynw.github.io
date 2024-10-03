@@ -20,3 +20,46 @@
  margin-right: 10rem;
  margin-top: 8rem;
 }
+
+#award_pic{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 35%;
+    border: solid;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close_award{
+    position: absolute;
+    top: 0.5rem;
+    right: 3rem;
+    color: #92d00d;
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.close_award:hover,.close_award:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+li[data-image] {
+    position: relative; /* Necessary for the hover effect */
+    cursor: pointer; /* Show pointer to indicate interactivity */
+    
+}
+
+li[data-image]:hover {
+    color: #1ba2a7; /* Text color on hover */
+}
+

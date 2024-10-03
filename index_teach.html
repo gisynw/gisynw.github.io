@@ -41,8 +41,10 @@
                     <li> <a href="" class="symbol">Yanan Wu</a></li>
                     <li> <a href="#intro">About me</a></li>
                     <li> <a href="#Edu">Education</a></li>
+                    <li><a href="#publication">Publications</a></li>
                     <li> <a href="#Pro">Projects</a></li>
-                    <li> <a href="#Pre">Presentation</a></li>
+                    <li><a href="#award_h1">Awards</a></li>
+                    <li> <a href="#Pre">Presentations</a></li>
                     <li> <a href="#Con">Contact</a></li>
                     <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
                         <i class="fa fa-bars"></i>
@@ -160,7 +162,7 @@
             <h3>2023</h3>
             <ul>
                 <li>Second Place in Graduate Paper Competition, SWAAG conference</li>
-                <li>International Cartographic Association Scholarship</li>
+                <li data-image = 'Images\awards\ICC2023.jpg'>International Cartographic Association Scholarship</li>
                 <li>Travel award from USNC for ICA with NSF funding to attend the ICC2023</li>
                 <li>Betty & Gifford Johnson Travel Award, UTD</li>
             </ul>
@@ -196,6 +198,11 @@
             <ul>
                 <li>Outstanding Prize in GeoDesign at Esri GIS Software Development Contest</li>
             </ul>
+
+            <div  class="award_pic" id  = "award_pic">
+                <span class="close_award">&times;</span>
+                <img id="pop-img" style="margin-top: 10rem;" src = "">
+            </div>
 
         </div>
         </div>
@@ -250,7 +257,7 @@
 
     </footer>
     
-    <div>
+    <div id = 'backtotop_div'>
         <button id ="backtoTop">Back To Top</button>
     </div>
 
@@ -259,6 +266,7 @@
     <script src="js_self/present.js"></script>
     <script src="js_self/responsive_nav.js"></script>
     <script src="js_self/change_bk.js"></script>
+    <script src="js_self/awards_img.js"></script>
     </body>
 </html>
 
