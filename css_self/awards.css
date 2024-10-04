@@ -22,7 +22,7 @@
 }
 
 #award_pic{
-    display: block;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -63,3 +63,7 @@ li[data-image]:hover {
     color: #1ba2a7; /* Text color on hover */
 }
 
+#pop-img{
+    height: 43rem;
+    width: 63rem;
+}

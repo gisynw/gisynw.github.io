@@ -1,0 +1,51 @@
+.Teaching{
+    /* border: solid; */
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 5rem;
+}
+
+.Teaching ul li{
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 4rem;
+}
+
+/* below is for css style in teaching */
+#teaching_img{
+    margin-top: 5rem;
+}
+
+.teaching_li{
+    /* border: solid; */
+    margin-left: 5rem;
+}
+
+#teaching_img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 13rem;  
+    flex-wrap: wrap;  
+    padding: 1rem;
+}
+
+#teaching_img figcaption{
+    font-size: 2rem;
+    background-color: rgb(204, 201, 201);
+    width: 25rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+} 
+
+#teaching_img img{
+    width: 25rem;
+    height: 21rem;
+}
+
+#teaching_img figure {
+    text-align: center; /* Center the caption and image inside each figure */
+}

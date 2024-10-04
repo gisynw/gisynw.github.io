@@ -1,20 +1,20 @@
 const listItems = document.querySelectorAll('li[data-image]')
+var modal = document.getElementsByClassName("award_pic")[0];
+var image = document.getElementById('pop-img')
 
-listItems.forEach(item =>{
-    item.addEventListener('click', function(){
-        const image = item.getAttribute('data-image');
-        openPopup(title, image);
-    });
-});
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].onclick = function() {
+        modal.style.display = "block";
 
-function openPopup(image){
-    document.getElementById('pop-img').src = image;
-    document.getElementById('award_pic').style.display = 'block';
+        const imageSrc = this.getAttribute('data-image');
+
+        image.src =  imageSrc;
+    }
 }
 
 var close_button = document.getElementsByClassName("close_award")[0];
 
 close_button.onclick = function(){
-    award_pic.style.display = "none"
+    modal.style.display = "none"
 }
 
