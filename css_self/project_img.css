@@ -15,20 +15,31 @@
 /* Below are css for image in teaching section */
 
 
-.pro_image img{
-    width: 25rem;
-    height: 21rem;
-    max-width: 100%; 
+.flip_card img{
+    width: 100%;
+    height: 28vh;
+    /* max-width: 100%;  */
+    margin: auto;
+    display: block;
 }
 
 .pro_image{
+    /* border-color: red;
+    border: solid; */
+
     display: flex;
     justify-content: center;
-    gap: 20rem;  
+    flex-wrap: wrap;
+    border: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 
 .pro_image figcaption{
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #0000cc;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgb(204, 201, 201);
     height: 4rem;
     padding: 1rem;
@@ -37,4 +48,17 @@
     display: flex;
     font-weight: bold;
 } 
+
+.pro_image figcaption:hover{
+    color: #ecb80b;
+}
 /* attribute for three images in class = pro_image End*/
+
+/* below is the css style for Projects html */
+
+.flip_card{
+    flex-basis: calc(30% - 13px);
+    /* height: 28vh; */
+    /* border: solid;
+    border-color: red; */
+}

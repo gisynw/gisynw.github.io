@@ -12,9 +12,7 @@
 }
 
 /* below is for css style in teaching */
-#teaching_img{
-    margin-top: 5rem;
-}
+
 
 .teaching_li{
     /* border: solid; */
@@ -22,23 +20,28 @@
 }
 
 #teaching_img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 13rem;  
-    flex-wrap: wrap;  
+    border: solid;
+    /* justify-content: center; */ 
     padding: 1rem;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
 }
 
 #teaching_img figcaption{
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: rgb(204, 201, 201);
-    width: 25rem;
-    height: 5rem;
+    height: 4rem;
+    width: 20rem;
+    margin-left: 44rem;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     display: flex;
     font-weight: bold;
+    margin: 0;
 } 
 
 #teaching_img img{
@@ -48,4 +51,8 @@
 
 #teaching_img figure {
     text-align: center; /* Center the caption and image inside each figure */
+}
+
+.teach_book{
+    flex-basis: calc(30% - 8px);
 }

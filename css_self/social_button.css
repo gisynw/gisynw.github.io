@@ -1,0 +1,15 @@
+.list-inline{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 8rem;
+  border: solid;
+  height: 8vh;
+  list-style: none;
+}
+
+
+
+.social-buttons i {
+  font-size: 4rem;
+}

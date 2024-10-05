@@ -11,7 +11,7 @@
 }
 
 .award_li{
-    margin-left: 15rem;
+    margin-left:35rem;
 }
 
 
@@ -56,11 +56,11 @@
 li[data-image] {
     position: relative; /* Necessary for the hover effect */
     cursor: pointer; /* Show pointer to indicate interactivity */
-    
+    /* color: #0000cc; */
 }
 
 li[data-image]:hover {
-    color: #1ba2a7; /* Text color on hover */
+    color: #e7b81d; /* Text color on hover */
 }
 
 #pop-img{

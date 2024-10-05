@@ -3,6 +3,9 @@ html{
     font-size: 16px;
 }
 
+*{
+    box-sizing: border-box
+}
 h1{
     text-align: center;
     font-size: 6rem;
@@ -14,14 +17,15 @@ p {color: rgb(19, 18, 18);
     font-size: 2.8rem;
 }
 
-a{
-    color: rgb(15, 15, 15);
+body a{
+    color: #0000cc;
     font-weight: bold;
+    
     text-decoration: none;
 }
 
 a:not(.symbol):hover{
-    color: rgb(102, 101, 101);
+    color: #e7b81d;
 }
 
 h2{

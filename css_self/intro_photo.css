@@ -25,3 +25,8 @@ margin-left: 75rem;
 /* border: solid; */
 }
 /* Intro About me End */
+
+.intro_cv{
+    justify-content: center;
+    text-align: center;
+}

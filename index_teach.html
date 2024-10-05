@@ -31,6 +31,21 @@
         <link rel="stylesheet" href="css_self/publication.css">
         <link rel="stylesheet" href="css_self/awards.css">
         <link rel="stylesheet" href="css_self/teaching.css">
+        <link rel="stylesheet" href="css_self/appointments.css">
+        <link rel="stylesheet" href="css_self/social_button.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+        <style>
+            .pub_list a{
+                color: black;
+            }
+        </style>
+    
+    
+    
     </head>
 
    <!--  -->
@@ -74,11 +89,42 @@
             <img class = 'headshot' src="Images\headshot.jpg" alt="">
             <p style="text-align: center; line-height: 5rem;">Yanan Wu <br>Visting Assistant Professor <br>
                 Geography Department, Clark University</p>
+            <div class="intro_cv">
+                <p>Curriculum Vitae</p>
+                <p><a href="https://www.clarku.edu/faculty/profiles/yanan-wu/">Faculty page @ Clark University</a></p>
+            </div>
+            
+            <ul class="list-inline social-buttons">
+                <li>
+                    <a href="https://github.com/gisynw">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://ywu120766.medium.com/">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="www.linkedin.com/in/giswu">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="mailto:yanawu@clarku.edu">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
+            </ul>
+
        </aside>
 
         <div id="p_intro">
             <h1>About Me</h1>
-            <button class = 'change_bk' onclick="change_bk_js()"  style="height: 80px;font-size: 50px;">Click here to highlight my past experience</button>
+            <!-- <button class = 'change_bk' onclick="change_bk_js()"  style="height: 80px;font-size: 50px;">Click here to highlight my past experience</button> -->
 
             <p> Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the <a href="https://www.clarku.edu/departments/geography/" class="lk">Department of Geography</a>
                 at <a href="https://www.clarku.edu/" class="lk">Clark University</a> . 
@@ -91,17 +137,27 @@
                 leveraging geographic information systems to address real-world challenges in urban environments.</p>
         </div>
      
-           
-       
        <div class = "Edu" id = "Edu" >
             <h1>Education</h1>
             <ul class = "edu_list">
-                <li>Doctor of Philosophy in Geospatial Information Sciences - May 2024</li>
-                <li>Master of Arts in Geography - May 2019</li>
-                <li>Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
+                <li>2019-2024&emsp;Doctor of Philosophy in Geospatial Information Sciences</li>
+                <li>2017-2019&emsp;Master of Arts in Geography - May 2019</li>
+                <li>2012-2016&emsp;Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May 2016</li>
             </ul>
        </div>
        <!-- below css from project_img.css -->
+        
+       <div class = "Edu" id = "Apo" >
+        <h1>APPOINTMENTS</h1>
+        <ul class = "edu_list">
+            <li>2024-now&emsp;    Visiting Assistant Professor, Geography Department, Clark University</li>
+            <li>2024 Summer&emsp; GIS Analyst, Information Technology Services, City of Lewisville</li>
+            <li>2023-2024&emsp;   Teaching Assistant, Gepspatial Information Scicences Department, UTD</li>
+            <li>2021-2023&emsp;   Instructor, Gepspatial Information Scicences Department, UTD</li>
+            <li>2020-2021&emsp;   Teaching Assistant, Gepspatial Information Scicences Department, UTD</li>
+            <li>2019-2020&emsp;   Research Assistant, Gepspatial Information Scicences Department, UTD</li>
+        </ul>
+   </div>
 
        <div id = 'publication'>
         <div id = pub_title><h1>Publications</h1></div>
@@ -132,27 +188,32 @@
         
         <div class = "pro_image">
             <figure class="flip_card">
-                <div class = 'flip_card_inner'>
-                    <a href="projects.html">
-                        <div class = "flip_card_front">
-                            <img src="Images\gisciences.png" alt=""> 
-                        </div>
-                        
-                        <figcaption class="flip_card_back">GIScience</figcaption>
-                    </a>
-                </div>
+                <a href="projects.html">
+                    <img src="Images\gisciences.png" alt=""> 
+                    <figcaption class="flip_card_back">GIScience</figcaption>
+                </a>
             </figure> 
 
-            <figure>
-                <a href="statistics.html" target="_blank">
+            <figure class="flip_card">
+                <a href="customized_tools.html" target="_blank">
                     <img src="Images\statistics.png" alt="">
-                    <figcaption>Statistics</figcaption>
+                    <figcaption>Tools&Addins</figcaption>
                 </a>
             </figure> 
             
-            <figure>
-                <img src="Images\webmap.png" alt="">
-                <figcaption>Web Mapping</figcaption>
+            <figure class="flip_card">
+                <a href="webmapping.html">
+                    <img src="Images\webmap.png" alt="">
+                    <figcaption>Web Mapping</figcaption>
+                </a> 
+            </figure>
+
+            <figure class="flip_card">
+                <a href="">
+                    <img src="" alt="">
+                    <figcaption>Customized tools</figcaption>
+                </a>
+             
             </figure>
         </div>
         </div>
@@ -162,7 +223,10 @@
           <div>
             <p>I have extensive experience as an instructor and Teaching Assistant for a diverse range of courses, 
                 including programming, GIS, Web mapping, statistics, and remote sensing. Below are some selected comments from my students and supervisors</p>
-            <div class = teaching_li>
+            
+                <p><a href="">Peer Observation for Formative Assessment of Teaching</a></p>
+            
+                <div class = teaching_li>
                 <ul>
                     <li>"Great professor. Always willing to answer questions and re-explain problems. Pre-made notes are extremely helpful especially
                          as the topics began to build off of each other. It was great to have a reference that was easy to pull information from."</li>
@@ -178,32 +242,46 @@
                 </ul>
             </div>
             
-            <div id = 'teaching_img'>
-                <figure>
-                    <a href="statistics.html" target="_blank">
-                        <img src="Images\statistics.png" alt="">
-                        <figcaption>Python in GIS</figcaption>
+            <div class = "pro_image">
+                <figure class="flip_card">
+                    <a href="https://gisynw.github.io/ssj-302/" target="_blank">
+                        <img src="Images\statistics.png" alt="" style="border: solid;">
+                        <figcaption class="teach_word">Python Programming in GIS</figcaption>
                     </a>
                 </figure> 
 
-                <figure>
-                    <a href="statistics.html" target="_blank">
+                <figure class="flip_card">
+                    <a href="https://gisynw.github.io/ssj-30262/" target="_blank">
                         <img src="Images\statistics.png" alt="">
                         <figcaption>Web Mapping</figcaption>
                     </a>
                 </figure> 
 
-                <figure>
+                <figure class="flip_card">
                     <a href="statistics.html" target="_blank">
                         <img src="Images\statistics.png" alt="">
-                        <figcaption>GIS Fundamental</figcaption>
+                        <figcaption>Remote Sensing Fundamental</figcaption>
                     </a>
                 </figure> 
 
-                <figure>
-                    <a href="statistics.html" target="_blank">
+                <figure class="flip_card">
+                    <a href="" target="_blank">
                         <img src="Images\statistics.png" alt="">
-                        <figcaption>Statistics</figcaption>
+                        <figcaption>Methods of Quantitative Analysis</figcaption>
+                    </a>
+                </figure> 
+
+                <figure class="flip_card">
+                    <a href="" target="_blank">
+                        <img src="Images\statistics.png" alt="">
+                        <figcaption>Global Change</figcaption>
+                    </a>
+                </figure> 
+
+                <figure class="flip_card">
+                    <a href="" target="_blank">
+                        <img src="Images\statistics.png" alt="">
+                        <figcaption>Principles of GIS</figcaption>
                     </a>
                 </figure> 
 
