@@ -32,8 +32,7 @@
     flex-wrap: wrap;
     border: solid;
     margin-left: 10%;
-    margin-right: 10%;
-    
+    margin-right: 10%;  
 }
 
 .pro_image figcaption{
@@ -57,7 +56,8 @@
 /* below is the css style for Projects html */
 
 .flip_card{
-    flex-basis: calc(30% - 13px);
+    flex-basis: calc(30% - 6rem);
+    width: 2rem;
     /* height: 28vh; */
     /* border: solid;
     border-color: red; */
