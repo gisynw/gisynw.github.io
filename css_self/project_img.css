@@ -16,7 +16,7 @@
 
 
 .flip_card img{
-    width: 100%;
+    width: 80%;
     height: 28vh;
     /* max-width: 100%;  */
     margin: auto;
@@ -33,13 +33,14 @@
     border: solid;
     margin-left: 10%;
     margin-right: 10%;  
+    gap: 6rem
 }
 
 .pro_image figcaption{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #0000cc;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: rgb(204, 201, 201);
+    background-color: rgb(235, 234, 234);
     height: 4rem;
     padding: 1rem;
     justify-content: center;
@@ -48,7 +49,7 @@
     font-weight: bold;
 } 
 
-.pro_image figcaption:hover{
+.pro_image a[href] figcaption:hover{
     color: #ecb80b;
 }
 /* attribute for three images in class = pro_image End*/
