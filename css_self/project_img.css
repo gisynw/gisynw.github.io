@@ -4,7 +4,7 @@
     margin-top: 5rem;
     margin-left: 15rem;
     margin-right: 10rem;
-    border: solid;
+    /* border: solid; */
    }
 
 #pro_h1{
@@ -16,7 +16,7 @@
 
 
 .flip_card img{
-    width: 80%;
+    /* width: 70%; */
     height: 28vh;
     /* max-width: 100%;  */
     margin: auto;
@@ -24,16 +24,15 @@
 }
 
 .pro_image{
-    /* border-color: red;
-    border: solid; */
-
+    /* border-color: red;*/
+    /* border: solid;  */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     border: solid;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;  
-    gap: 6rem
+    gap: 2rem
 }
 
 .pro_image figcaption{
@@ -57,9 +56,10 @@
 /* below is the css style for Projects html */
 
 .flip_card{
-    flex-basis: calc(30% - 6rem);
-    width: 2rem;
+    flex-basis: calc(30%);
+    padding: 0%;
+    width: 50%;
     /* height: 28vh; */
     /* border: solid;
-    border-color: red; */
+    border-color: red;  */
 }
