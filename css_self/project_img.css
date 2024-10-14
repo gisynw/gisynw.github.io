@@ -16,23 +16,22 @@
 
 
 .flip_card img{
-    /* width: 70%; */
+    width: 50rem;
     height: 28vh;
     /* max-width: 100%;  */
-    margin: auto;
-    display: block;
+    /* margin: auto; */
+    /* display: block; */
 }
 
 .pro_image{
     /* border-color: red;*/
     /* border: solid;  */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    border: solid;
-    margin-left: 5%;
-    margin-right: 10%;  
-    gap: 2rem
+    /* border: solid; */
+    margin-left: 15rem;
+    margin-right: 15rem; 
 }
 
 .pro_image figcaption{
@@ -40,7 +39,7 @@
     color: #0000cc;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgb(235, 234, 234);
-    height: 4rem;
+    /* height: 4rem; */
     padding: 1rem;
     justify-content: center;
     align-items: center;
@@ -56,10 +55,11 @@
 /* below is the css style for Projects html */
 
 .flip_card{
-    flex-basis: calc(30%);
-    padding: 0%;
-    width: 50%;
+    flex-basis: 50rem;
+    padding-left: 0%;
+    /* width: 1rem;   */
     /* height: 28vh; */
-    /* border: solid;
+    /* border: solid; */
+    /* box-sizing: border-box;
     border-color: red;  */
 }

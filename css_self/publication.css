@@ -2,12 +2,12 @@
  /* border: solid; */
  margin-top: 15rem ;
  margin-left: 25rem;
- margin-right: 25rem;
+ margin-right: 20rem;
  /* border: solid; */
 }
 
 #pub_title{
-    border: solid;
+    /* border: solid; */
     display:grid;
     
     

@@ -3,7 +3,7 @@
   justify-content: center;
   text-align: center;
   gap: 8rem;
-  border: solid;
+  /* border: solid; */
   height: 8vh;
   list-style: none;
 }

@@ -1,8 +1,10 @@
 .Teaching{
     /* border: solid; */
     margin-left: 15rem;
-    margin-right: 15rem;
+    margin-right: 10rem;
     margin-top: 5rem;
+    /* border: solid; */
+    /* color: black; */
 }
 
 .Teaching ul li{
@@ -20,7 +22,7 @@
 }
 
 #teaching_img{
-    border: solid;
+    /* border: solid; */
     /* justify-content: center; */ 
     padding: 1rem;
     margin-top: 5rem;
@@ -55,4 +57,10 @@
 
 .teach_book{
     flex-basis: calc(30% - 8px);
+}
+
+.Teaching_content{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    /* border: solid; */
 }
