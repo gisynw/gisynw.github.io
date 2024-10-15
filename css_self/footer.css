@@ -4,7 +4,7 @@ footer{
    .footer_personal{
     height: 30rem;
     width: 55rem;
-    margin-left: 15rem;
+    margin-left: 25rem;
     margin-bottom: 15rem;
     /* border: solid; */
    }
@@ -18,7 +18,7 @@ footer{
 
    #google_footer{
     float: right;
-    border: solid;
+    /* border: solid; */
     margin-right: 15rem;
     height: 34.3rem;
     width: 60rem;
