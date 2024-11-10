@@ -1,0 +1,93 @@
+/* Reset Body Margin */
+body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.42857143;
+}
+
+/* General header styling */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    color: #fff;
+    height: 65vh;
+    background-image: url(https://gisynw.github.io/Images/img_bg_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Primary Header Text Styling */
+.header_h1 {
+    font-weight: bold;
+    font-size: calc(2.8rem + 2vw); /* Large, responsive font size */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Subheader Text Styling */
+.nav_bar_header_p {
+    font-size: calc(1.6rem + 0.5vw);
+    color: #EEE;
+    margin: 0;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Container for Header Text */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the text vertically and horizontally */
+    text-align: center;
+    height: 100%; /* Ensures the text stays in the center of the header */
+}
+
+/* Center container for the headers */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the text vertically and horizontally */
+    text-align: center;
+    height: 100%; /* Ensures the text stays in the center of the header */
+}
+
+/* Fade effect */
+.nav_bar_header1, .nav_bar_header2 {
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    position: absolute;
+    margin-top: 15vh;
+}
+
+/* Class to show the element */
+.show {
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 1200px) {
+    header {
+        height: 50vh; /* Increase header height on large screens */
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        height: 70vh; /* Smaller height on extra small devices */
+    }
+    .header_h1 {
+        font-size: calc(2rem + 1vw); /* Adjust font size for small screens */
+    }
+    .nav_bar_header_p {
+        font-size: calc(1.2rem + 0.5vw); /* Adjust subheader font size */
+    }
+}
+
+

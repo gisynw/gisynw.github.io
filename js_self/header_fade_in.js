@@ -3,16 +3,14 @@ window.onload = function() {
     const header1 = document.querySelector(".nav_bar_header1");
     const header2 = document.querySelector(".nav_bar_header2");
 
+    let isHeader1Visible = true; // Initialize the variable
 
-    let isHeader1Visible = true; // Intialize the variable
- 
     // Function to toggle between headers
     function toggleHeaders() {
         if (isHeader1Visible) {
             // Show header1, hide header2
             header1.classList.add("show");
             header2.classList.remove("show");
-         
         } else {
             // Show header2, hide header1
             header2.classList.add("show");
