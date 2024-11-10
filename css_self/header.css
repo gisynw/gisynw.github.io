@@ -1,8 +1,6 @@
 /* Reset Body Margin */
 body {
     margin: 0;
-    font-size: 15px;
-    line-height: 1.42857143;
 }
 
 /* General header styling */
@@ -13,7 +11,7 @@ header {
     align-items: center; /* Center horizontally */
     text-align: center;
     color: #fff;
-    height: 65vh;
+    height: 70vh;
     background-image: url(https://gisynw.github.io/Images/img_bg_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -24,14 +22,14 @@ header {
 /* Primary Header Text Styling */
 .header_h1 {
     font-weight: bold;
-    font-size: calc(2.8rem + 2vw); /* Large, responsive font size */
+    font-size: calc(2.3rem + 2vw); /* Large, responsive font size */
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Subheader Text Styling */
 .nav_bar_header_p {
-    font-size: calc(1.6rem + 0.5vw);
+    font-size: calc(1.4rem + 0.5vw);
     color: #EEE;
     margin: 0;
     font-style: italic;
