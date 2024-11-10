@@ -1,0 +1,5 @@
+.carousel-inner .item img {
+    height: 600px; /* Fixed height */
+    width: 100%; /* Full width */
+    object-fit:contain /* Ensures image covers the area without stretching */
+}

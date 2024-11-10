@@ -1,51 +1,19 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>my website</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
+    <title>Yanan Wu</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Yanan Wu's Personal Website">
+    <link rel="icon" type="image/x-icon" href="./Images/Clark_University_seal.svg.ico">
     <!-- insert external css -->
     <link rel="stylesheet" href="./css_self/style.css">
-    <link rel="stylesheet" href="./css_self/intro_photo.css">
-    <link rel="stylesheet" href="./css_self/header.css">
-    <link rel="stylesheet" href="css_self/education_li.css">
-    <link rel="stylesheet" href="css_self/present.css">
-    <link rel="stylesheet" href="css_self/project_img.css">
-    <link rel="stylesheet" href="css_self/footer.css">
-    <!-- <link rel="stylesheet" href="css_self/google.css"> -->
-    <link rel="stylesheet" href="css_self/luckybutton.css">
-    <link rel="stylesheet" href="css_self/all_element.css">
-    <link rel="stylesheet" href="css_self/backtotop_button.css">
-    <link rel="stylesheet" href="css_self/nav_bk_image.css">
-    <link rel="stylesheet" href="css_self/project_image_flip.css">
-    <link rel="stylesheet" href="css_self/change_bk.css">
-    <link rel="stylesheet" href="css_self/publication.css">
-    <link rel="stylesheet" href="css_self/awards.css">
-    <link rel="stylesheet" href="css_self/teaching.css">
-    <link rel="stylesheet" href="css_self/appointments.css">
-    <link rel="stylesheet" href="css_self/social_button.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-
-    <style>
-        .pub_list a {
-            color: black;
-        }
-    </style>
-
-
+    <link rel="stylesheet" href="./css_self/header.css">
+    <link rel="stylesheet" href="./css_self/image_carousel.css">
 
 </head>
 
@@ -57,7 +25,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -65,30 +34,30 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#header">Yanan Wu</a>
             </div>
-    
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#p_intro">About me</a></li>
+                        <a class="page-scroll" href="#about">About me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Edu">Education</a></li>
+                        <a class="page-scroll" href="#research">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#publication">Publications</a></li>
+                        <a class="page-scroll" href="#publication">Publications</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Pro">Projects</a></li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#award_h1">Awards</a></li>
+                        <a class="page-scroll" href="#awards">Awards</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Pre">Presentations</a></li>
+                        <a class="page-scroll" href="#Pre">Presentations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Con">Contact</a></li>
+                        <a class="page-scroll" href="#Con">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -114,416 +83,506 @@
             </div>
         </header>
     </div>
-    
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="./Images/headshot.jpg" class="img-responsive img-circle" alt="" />
+                        <h4>Yanan Wu <br>（中文名：吴亚南）</h4>
+                        <h4>Visting Assistant Professor</h4>
+                        <p class="text-muted">Visting Assistant Professor</p>
+                        <p class="text-muted">Geography Department, Clark University </p>
+                        <p class="text-muted"><a
+                                href="https://docs.google.com/document/d/1onS5_RpaXO5n2qppB37q-mRH_07O6AnH5qkozztpSBo/edit?usp=sharing"
+                                target="_blank">Curriculum Vitae</a></p>
+                        <p class="text-muted"><a href="https://www.clarku.edu/faculty/profiles/yanan-wu/"
+                                target="_blank">Faculty page @ Clark University</a></p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="https://github.com/gisynw">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
 
+                            <li>
+                                <a href="https://ywu120766.medium.com/">
+                                    <i class="fa-brands fa-medium"></i>
+                                </a>
+                            </li>
 
-    <aside class="intro">
-        <img class='headshot' src="Images\headshot.jpg" alt="">
-        <p style="text-align: center; line-height: 5rem;">Yanan Wu <br>Visting Assistant Professor <br>
-            Geography Department, Clark University</p>
-        <div class="intro_cv">
-            <p>Curriculum Vitae</p>
-            <p><a href="https://www.clarku.edu/faculty/profiles/yanan-wu/">Faculty page @ Clark University</a></p>
-        </div>
+                            <li>
+                                <a href="https://www.linkedin.com/in/giswu/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
 
-        <ul class="list-inline social-buttons">
-            <li>
-                <a href="https://github.com/gisynw">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
+                            <li>
+                                <a href="mailto:yanawu@clarku.edu">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-lg-offset-1">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">About Me</h2>
+                    </div>
+                    <p class="large">
+                        Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the <a
+                            href="https://www.clarku.edu/departments/geography/" target="_blank">Department of Geography
+                            at Clark University</a>.
+                        I hold a Ph.D. in Geospatial Information Sciences from the University of Texas at Dallas, an
+                        M.A. in Geography from Binghamton University, and a B.S. from Xi'an University of Science and
+                        Technology.
 
-            <li>
-                <a href="https://ywu120766.medium.com/">
-                    <i class="fa-brands fa-medium"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.linkedin.com/in/giswu/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="mailto:yanawu@clarku.edu">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
-            </li>
-        </ul>
-
-    </aside>
-
-    <div id="p_intro">
-        <h1>About Me</h1>
-        <!-- <button class = 'change_bk' onclick="change_bk_js()"  style="height: 80px;font-size: 50px;">Click here to highlight my past experience</button> -->
-
-        <p> Hi, I'm Yanan, currently serving as a Visiting Assistant Professor in the <a
-                href="https://www.clarku.edu/departments/geography/" class="lk">Department of Geography</a>
-            at <a href="https://www.clarku.edu/" class="lk">Clark University</a> .
-            I hold a Ph.D. in Geospatial Information Sciences</a>
-            from the University of Texas at Dallas, an M.A. in Geography from Binghamton University,
-            and a B.S. from Xi'an University of Science and Technology.</p>
-        <p>As a geographer, my expertise lies in transportation geography, social geography,
-            spatial-temporal analysis, and GIScience. My recent research has focused on analyzing emergency response
-            times for vehicles in Dallas,
-            where I utilized fine-grained spatial units to predict areas with extended response durations. This work is
-            part of my broader interest in
-            leveraging geographic information systems to address real-world challenges in urban environments.</p>
-    </div>
-
-    <div class="Edu" id="Edu">
-        <h1>Education</h1>
-        <ul class="edu_list">
-            <li>2019-2024&emsp;Doctor of Philosophy in Geospatial Information Sciences</li>
-            <li>2017-2019&emsp;Master of Arts in Geography - May 2019</li>
-            <li>2012-2016&emsp;Bachelor of Science in Resource Environment and Urban-Rural Planning Management - May
-                2016</li>
-        </ul>
-    </div>
-    <!-- below css from project_img.css -->
-
-    <div class="Edu" id="Apo">
-        <h1>Appointments</h1>
-        <ul class="edu_list">
-            <li>2024-now&emsp; Visiting Assistant Professor, Geography Department, Clark University</li>
-            <li>2024 Summer&emsp; GIS Analyst, Information Technology Services, City of Lewisville</li>
-            <li>2023-2024&emsp; Teaching Assistant, Gepspatial Information Scicences Department, UTD</li>
-            <li>2021-2023&emsp; Instructor, Gepspatial Information Scicences Department, UTD</li>
-            <li>2020-2021&emsp; Teaching Assistant, Gepspatial Information Scicences Department, UTD</li>
-            <li>2019-2020&emsp; Research Assistant, Gepspatial Information Scicences Department, UTD</li>
-            <li>2017-2019&emsp; Graduate Assistant, Geography, Binghamton Dpeartment</li>
-        </ul>
-    </div>
-
-    <div id='publication'>
-        <div id=pub_title>
-            <h1>Publications</h1>
-        </div>
-        <div class='pub_list'>
-            <ul>
-                <li><a href="">Wu, Y., Yang, Y., & Yuan, M. (2024). Location Analytics of Routine Occurrences (LARO) to
-                        Identify Locations with Regularly Occurring Events with a Case Study on Traffic Accidents.
-                        Information, 15(2), 107.</a></li>
-                <li><a href="">Yang Y., Wu Y., Yuan M. What Local Environments Drive Opportunities for Social Events? A
-                        New Approach Based on Bayesian Modeling in Dallas, Texas, USA. ISPRS International Journal of
-                        Geo-Information. 2024; 13(3):81.</a></li>
-                <li><a href="">Wu, Y., Yang, Y., & Yuan, M. (2023). Understanding the role of geographical environments
-                        in emergency dispatches with GPS trajectories. Abstracts of the ICA, 6, 276.</a> </li>
-                <li><a href="">Wu, Y., & Yuan, M. (2021). Where and why there: location analytics of routine occurrences
-                        (LARO) with a case study on traffic accidents. Abstracts of the ICA, 3, 318.</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Conference Proceddings</h2>
-        </div>
-        <div class='pub_list'>
-            <ul>
-                <li><a href="">Wu, Y., Yang, Y., Yuan, M. Analyze emergency-vehicle dispatches in Dallas, Texas, USA, In
-                        AutoCarto 2022 Proceedings.</a></li>
-                <li><a href="">Yang, Y., Wu, Y., Yuan, M. Quantifying the impacts of social infrastructure on human
-                        networks, In AutoCarto 2022 Proceedings.</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-
-    <div id="Pro">
-        <div id="pro_h1">
-            <h1>Projects</h1>
-        </div>
-
-        <div class="pro_image">
-            <figure class="flip_card">
-                <a href="projects.html" target="_blank">
-                    <img src="Images\gisciences.png" alt="">
-                    <figcaption class="flip_card_back">GIScience</figcaption>
-                </a>
-            </figure>
-
-            <figure class="flip_card">
-                <a href="customized_tools.html" target="_blank">
-                    <img src="Images\statistics.png" alt="">
-                    <figcaption>Tools&Addins</figcaption>
-                </a>
-            </figure>
-
-            <figure class="flip_card">
-                <a href="webmapping.html">
-                    <img src="Images\projects\web_cover.png" alt="">
-                    <figcaption>Web Mapping</figcaption>
-                </a>
-            </figure>
-        </div>
-    </div>
-
-    <div class='Teaching'>
-        <div>
-            <div class='teaching_h1'>
-                <h1>Teaching</h1>
+                        As a geographer, my expertise lies in transportation geography, social geography,
+                        spatial-temporal analysis, and GIScience.
+                        My recent research has focused on analyzing emergency response times for vehicles in Dallas,
+                        where I utilized fine-grained spatial units to predict areas with extended response
+                        durations. This work is part of my broader interest in leveraging geographic information systems
+                        to address real-world challenges in urban environments.
+                    </p>
+                    <!-- Education -->
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Education</h2>
+                    </div>
+                    <p class="large">
+                        &bull; 2019–2024 &emsp; Ph.D. in Geospatial information sciences.
+                        <a href="https://epps.utdallas.edu/about/programs/geospatial-information-sciences/"
+                            target="_blank">University of Texas at Dallas</a>, Texas, USA<br />
+                        &bull; 2017–2019 &emsp; M.A. in Geography. <a href="https://www.binghamton.edu/geography/"
+                            target="_blank">Binghamton University (SUNY)</a>, NewYork, USA<br />
+                        &bull; 2013–2017 &emsp; B.S. in Resource Environment and Urban-Rural Planning Management.
+                        <a href="https://en.xust.edu.cn/" target="_blank">Xi'an University of Science and
+                            Technology</a>, Xi'an, China
+                    </p>
+                    <!-- Appointments -->
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Appointments</h2>
+                    </div>
+                    <p class="large">
+                        &bull; 2024–now &emsp; Visiting Assistant Professor, Geography Department, Clark
+                        University<br />
+                        &bull; 2024 Summer &emsp; GIS Analyst, Information Technology Services, City of Lewisville<br />
+                        &bull; 2023-2024 &emsp; Teaching Assistant, Gepspatial Information Scicences Department,
+                        UTD<br />
+                        &bull; 2021-2023 &emsp; Instructor, Gepspatial Information Scicences Department, UTD<br />
+                        &bull; 2020-2021 &emsp; Teaching Assistant, Gepspatial Information Scicences Department,
+                        UTD<br />
+                        &bull; 2019-2020 &emsp; Research Assistant, Gepspatial Information Scicences Department,
+                        UTD<br />
+                        &bull; 2017-2019 &emsp; Graduate Assistant, Geography, Binghamton Department<br />
+                    </p>
+                </div>
             </div>
-            <div class='Teaching_content'>
-                <p>I have extensive experience as an instructor and Teaching Assistant for a diverse range of courses,
-                    including programming, GIS, Web mapping, statistics, and remote sensing. Below are some selected
-                    comments from my students and supervisors</p>
+        </div>
+    </section>
 
-                <p><a href="materials/TeachingReview.pdf">Peer Observation for Formative Assessment of Teaching - UTD,
-                        Nov, 2021</a></p>
-                <p><a href="materials/Yanan Wu Observation 10-24.pdf">Teaching Evaluation - Clark University, October,
-                        2024</a></p>
+        <!-- Project Section -->
+        <section id="research"  class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Projects</h2>
+                        <!-- <h3 class="section-subheading">Geospatial Data Science: the science that investigates the 'where' and
+                            'why' of various human and natural phenomena! <br>As geographers, we discover deeper insights, make
+                            better decisions, and take them to action.</h3> -->
+                    </div>
+                </div>
+                <div class="row">
+    
+                    <div class="col-md-4 col-sm-6 research-item">
+                        <a href="#researchModal1" class="research-link" data-toggle="modal">
+                            <div class="research-hover">
+                                <div class="research-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="./Images/projects/GIS-Cover.png" class="img-responsive img-centered" alt="">
+                        </a>
+                        <div class="research-caption">
+                            <h4>GIScience</h4>
+                            <p class="text-muted">Spatial Analysis, Geostatistics, WebGIS, GIS Programming, Python, R</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-sm-6 research-item">
+                        <a href="#researchModal4" class="research-link" data-toggle="modal">
+                            <div class="research-hover">
+                                <div class="research-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="./Images/projects/Tool-Cover.png" class="img-responsive img-centered" alt="">
+                        </a>
+                        <div class="research-caption">
+                            <h4>Tools & Addins</h4>
+                            <p class="text-muted">Serverless App development (AWS), Android Development, Addins for ArcGIS
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-sm-6 research-item">
+                        <a href="#researchModal2" class="research-link" data-toggle="modal">
+                            <div class="research-hover">
+                                <div class="research-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="./Images/projects/WEBGIS-Cover.png" class="img-responsive img-centered" alt="">
+                        </a>
+                        <div class="research-caption">
+                            <h4>WebGIS</h4>
+                            <p class="text-muted">Satelite Image, Big Data, Google Earth Engine, ArcGIS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class=teaching_li>
+    <!-- Publication Section -->
+    <section id="publication">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Publications</h2>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="margin-10"><a href="">Wu, Y., Yang, Y., & Yuan, M. (2024). Location Analytics of Routine
+                            Occurrences (LARO)
+                            to
+                            Identify Locations with Regularly Occurring Events with a Case Study on Traffic Accidents.
+                            Information, 15(2), 107.</a></li>
+                    <li class="margin-10"><a href="">Yang Y., Wu Y., Yuan M. What Local Environments Drive Opportunities
+                            for Social
+                            Events? A
+                            New Approach Based on Bayesian Modeling in Dallas, Texas, USA. ISPRS International Journal
+                            of
+                            Geo-Information. 2024; 13(3):81.</a></li>
+                    <li class="margin-10"><a href="">Wu, Y., Yang, Y., & Yuan, M. (2023). Understanding the role of
+                            geographical
+                            environments
+                            in emergency dispatches with GPS trajectories. Abstracts of the ICA, 6, 276.</a> </li>
+                    <li class="margin-10"><a href="">Wu, Y., & Yuan, M. (2021). Where and why there: location analytics
+                            of routine
+                            occurrences
+                            (LARO) with a case study on traffic accidents. Abstracts of the ICA, 3, 318.</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Conference Proceddings</h2>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="margin-10"> <a href="">Wu, Y., Yang, Y., Yuan, M. Analyze emergency-vehicle dispatches in
+                            Dallas, Texas, USA, In
+                            AutoCarto 2022 Proceedings.</a></li>
+                    <li class="margin-10"> <a href="">Yang, Y., Wu, Y., Yuan, M. Quantifying the impacts of social
+                            infrastructure on human
+                            networks, In AutoCarto 2022 Proceedings.</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">TEACHING</h2>
+                        <p>I have extensive experience as an instructor and Teaching Assistant for a diverse range of courses, including programming, GIS, Web mapping, statistics, and remote sensing.</p>
+                        <p>Below are some selected comments from my students and supervisors.</p>
+                        <p><a href="materials/TeachingReview.pdf">Peer Observation for Formative Assessment of Teaching - UTD,
+                            Nov, 2021</a></p>
+                        <p><a href="materials/Yanan Wu Observation 10-24.pdf">Teaching Evaluation - Clark University, October,
+                                2024</a></p>
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
                     <ul>
-                        <li>"Great professor. Always willing to answer questions and re-explain problems. Pre-made notes
-                            are extremely helpful especially
-                            as the topics began to build off of each other. It was great to have a reference that was
-                            easy to pull information from."</li>
-                        <li>"Assignments were well rounded in testing for learned information. Overall, the experience
-                            in this course was average."</li>
-                        <li>"I enjoyed taking your class this semester! I think you'll be a great professor with some
-                            more experience! Have a great spring semester!"</li>
-                        <li>"I think that the course was laid out very nicely. There was nothing really that semester
-                            that I thought needed improvement."</li>
-                        <li>"Functions like a co-teacher; well organized; extremely supportive of course educational
-                            goals; she was a pleasure to work with"</li>
-                        <li>"The course was really good overall"</li>
-                        <li>"I want to thank you for being my professor for Methods of Quantitative Analysis.
-                            I was intimidated by the course material at the start of the semester, but as you began
-                            teaching, things started to make more sense. "</li>
-                        <li>"What I really appreciated was your dedication and level of care for all of your students.
-                            Despite the mix of online and in-person learning,
-                            you were always willing to answer any questions and engage with us so that we would get the
-                            most out of the course."</li>
+                        <li><i>“Great professor. Always willing to answer questions and re-explain problems. Pre-made notes are extremely helpful especially as the topics began to build off of each other. It was great to have a reference that was easy to pull information from.”</i></li>
+                        <li><i>“Assignments were well rounded in testing for learned information. Overall, the experience in this course was average.”</i></li>
+                        <li><i>“I enjoyed taking your class this semester! I think you'll be a great professor with some more experience! Have a great spring semester!”</i></li>
+                        <li><i>“I think that the course was laid out very nicely. There was nothing really that semester that I thought needed improvement.”</i></li>
+                        <li><i>“Functions like a co-teacher; well organized; extremely supportive of course educational goals; she was a pleasure to work with.”</i></li>
+                        <li><i>“The course was really good overall.”</i></li>
+                        <li><i>“I want to thank you for being my professor for Methods of Quantitative Analysis. I was intimidated by the course material at the start of the semester, but as you began teaching, things started to make more sense.”</i></li>
+                        <li><i>“What I really appreciated was your dedication and level of care for all of your students. Despite the mix of online and in-person learning, you were always willing to answer any questions and engage with us so that we would get the most out of the course.”</i></li>
                     </ul>
+                </div>
+
+                <!-- Course list -->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a href="https://gisynw.github.io/ssj-302/" target="_blank" class="image featured">
+                            <img src="Images/lessons/python_pro.png" class="img-responsive img-centered img-max80" alt="Python Programming in GIS" />
+                        </a>
+                        <h4 class="service-heading"><a href="https://gisynw.github.io/ssj-302/" target="_blank">Python Programming in GIS</a></h4>
+                        <!-- <p>SSJ-302 @ Your Institution</p> -->
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://gisynw.github.io/ssj-30262/" target="_blank" class="image featured">
+                            <img src="Images/lessons/webmapping.png" class="img-responsive img-centered img-max80" alt="Web Mapping" />
+                        </a>
+                        <h4 class="service-heading"><a href="https://gisynw.github.io/ssj-30262/" target="_blank">Web Mapping</a></h4>
+                        <!-- <p>SSJ-30262 @ Your Institution</p> -->
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="image featured">
+                            <img src="Images/lessons/remote.png" class="img-responsive img-centered img-max80" alt="Remote Sensing Fundamental" />
+                        </a>
+                        <h4 class="service-heading"><a href="#" target="_blank">Remote Sensing Fundamental</a></h4>
+                        <!-- <p>Course Code @ Your Institution</p> -->
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a href="#" class="image featured">
+                            <img src="Images/lessons/statistics.png" class="img-responsive img-centered img-max80" alt="Methods of Quantitative Analysis" />
+                        </a>
+                        <h4 class="service-heading"><a href="#" target="_blank">Methods of Quantitative Analysis</a></h4>
+                        <!-- <p>Course Code @ Your Institution</p> -->
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="image featured">
+                            <img src="Images/lessons/global.png" class="img-responsive img-centered img-max80" alt="Global Change" />
+                        </a>
+                        <h4 class="service-heading"><a href="#" target="_blank">Global Change</a></h4>
+                        <!-- <p>Course Code @ Your Institution</p> -->
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="image featured">
+                            <img src="Images/lessons/gis.png" class="img-responsive img-centered img-max80" alt="Principles of GIS" />
+                        </a>
+                        <h4 class="service-heading"><a href="#" target="_blank">Principles of GIS</a></h4>
+                        <!-- <p>Course Code @ Your Institution</p> -->
+                    </div>
+                </div>
+                
+    
+            </div>
+        </section>
+
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Awards and Honors</h2>
+                </div>
+            </div>
+            <div class="container">
+                <h3>2023</h3>
+                <ul>
+                    <li class="margin-10">Second Place in Graduate Paper Competition, SWAAG conference</li>
+                    <li class="margin-10"><a href="Images/awards/ICC2023.jpg" target="_blank">International Cartographic Association Scholarship</a></li>
+                    <li class="margin-10">Travel award from USNC for ICA with NSF funding to attend the ICC2023</li>
+                    <li class="margin-10">Betty & Gifford Johnson Travel Award, UTD</li>
+                </ul>
+
+                <h3>2022</h3>
+                <ul>
+                    <li class="margin-10">Graduate student participants of the Grad WINGS Workshop, UCGIS</li>
+                    <li class="margin-10">International Cartographic Association Scholarship</li>
+                    <li class="margin-10">Second Place, Student Lightning Talk Award, UCGIS Symposium</li>
+                    <li class="margin-10">Third Place in GIS Day 2022 Awarded by Geospatial Information Sciences Program, UTD</li>
+                    <li class="margin-10">Travel award from UCGIS to attend the UCGIS Symposium</li>
+                    <li class="margin-10">The University of Texas at Dallas 2022 Three Minute Thesis (3MT) Competition, Finalist</li>
+                    <li class="margin-10">Honorable mentions, GI Science & Systems Student Honors Paper Competition session, AAG</li>
+                </ul>
+
+                <h3>2021</h3>
+                <ul>
+                    <li class="margin-10">Travel award from USNC for ICA with NSF funding to attend the ICC2021</li>
+                    <li class="margin-10">Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</li>
+                    <li class="margin-10">PhD Research Small Grants Awarded by the Office of Graduate Education, UTD</li>
+                    <li class="margin-10">First Place in GIS Day 2021 Awarded by Geospatial Information Sciences Program, UTD</li>
+                </ul>
+
+                <h3>2019</h3>
+                <ul>
+                    <li class="margin-10">First Place in GIS Day 2019 Awarded by Geospatial Information Sciences Program, UTD</li>
+                    <li class="margin-10">Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</li>
+                    <li class="margin-10">First Place in GIS Day 2019 Awarded by the Geography Department at Binghamton University</li>
+                </ul>
+
+                <h3>2015</h3>
+                <ul>
+                    <li class="margin-10">Outstanding Prize in GeoDesign at Esri GIS Software Development Contest</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Presentation Section -->
+    <section id="Pre" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Presentations</h2>
                 </div>
             </div>
 
+        <!-- Bootstrap 3 Carousel -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+            </ol>
 
-            <div class="pro_image">
-                <figure class="flip_card">
-                    <a href="https://gisynw.github.io/ssj-302/" target="_blank">
-                        <img src="Images\lessons\python_pro.png" alt="">
-                        <figcaption class="teach_word">Python Programming in GIS</figcaption>
-                    </a>
-                </figure>
-
-                <figure class="flip_card">
-                    <a href="https://gisynw.github.io/ssj-30262/" target="_blank">
-                        <img src="Images\lessons\webmapping.png" alt="">
-                        <figcaption>Web Mapping</figcaption>
-                    </a>
-                </figure>
-
-                <figure class="flip_card">
-                    <a>
-                        <img src="Images\lessons\remote.png" alt="">
-                        <figcaption>Remote Sensing Fundamental</figcaption>
-                    </a>
-                </figure>
-
-                <figure class="flip_card">
-                    <a>
-                        <img src="Images\lessons\statistics.png" alt="">
-                        <figcaption>Methods of Quantitative Analysis</figcaption>
-                    </a>
-                </figure>
-
-                <figure class="flip_card">
-                    <a>
-                        <img src="Images\lessons\global.png" alt="">
-                        <figcaption>Global Change</figcaption>
-                    </a>
-                </figure>
-
-                <figure class="flip_card">
-                    <a>
-                        <img src="Images\lessons\gis.png" alt="">
-                        <figcaption>Principles of GIS</figcaption>
-                    </a>
-                </figure>
-
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="Images/presentation/graduate.jpg" alt="Being Dr.Wu, Dallas">
+                    <div class="carousel-caption">
+                        <h3>Being Dr.Wu, Dallas</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/aag_denver.jpg" alt="AAG 2023, Denver">
+                    <div class="carousel-caption">
+                        <h3>AAG 2023, Denver</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/autocarto.jpg" alt="AutoCarto, Redlands">
+                    <div class="carousel-caption">
+                        <h3>AutoCarto, Redlands</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/hawaii.jpg" alt="AAG 2024, Honolulu">
+                    <div class="carousel-caption">
+                        <h3>AAG 2024, Honolulu</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/icc_africa.jpg" alt="ICC 2023, Africa">
+                    <div class="carousel-caption">
+                        <h3>ICC 2023, Africa</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/3mpt.jpg" alt="3MT, Dallas">
+                    <div class="carousel-caption">
+                        <h3>3MT, Dallas</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/laredo swaag.jpg" alt="SWAAG, Laredo">
+                    <div class="carousel-caption">
+                        <h3>SWAAG, Laredo</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/occ2021.jpg" alt="ICC 2021, Italy">
+                    <div class="carousel-caption">
+                        <h3>ICC 2021, Italy</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/ucgis.jpg" alt="UCGIS, Syracuse">
+                    <div class="carousel-caption">
+                        <h3>UCGIS, Syracuse</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/usgif.jpg" alt="USGIF, Denver">
+                    <div class="carousel-caption">
+                        <h3>USGIF, Denver</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/aag2022.png" alt="AAG 2020, Online">
+                    <div class="carousel-caption">
+                        <h3>AAG 2020, Online</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/presentation/2019aag.jpg" alt="AAG 2019, DC">
+                    <div class="carousel-caption">
+                        <h3>AAG 2019, DC</h3>
+                    </div>
+                </div>
             </div>
         </div>
 
+            <div class="container">
+                <h3>2024</h3>
+                <ul>
+                    <li class="margin-10">Understanding the role of geographical environments in emergency dispatch, AAG, March</li>
+                </ul>
 
+                <h3>2023</h3>
+                <ul>
+                    <li class="margin-10">Identify geographical environments influencing emergency response performance, SWAAG</li>
+                    <li class="margin-10">Modeling of emergency incidents with GPS trajectory data using random forest algorithm, ICC</li>
+                    <li class="margin-10">Assessing the role of geographical context in modeling the likelihood of emergency response, AAG</li>
+                </ul>
 
-    </div>
+                <h3>2022</h3>
+                <ul>
+                    <li class="margin-10">Driving pattern analysis for emergency vehicles (EV), AutoCarto</li>
+                    <li class="margin-10">Understanding emergency vehicle movement from GPS trajectory data, GIS Day in UTD</li>
+                    <li class="margin-10">Understanding 911 Response Time from GPS trajectory data, UTD Research Day</li>
+                    <li class="margin-10">Driving pattern analysis for emergency vehicle (EV) using multi-source data, UCGIS, Syracuse</li>
+                    <li class="margin-10">Why is there a delay in a 911 vehicle arriving? The Three Minute Thesis (3MT) Competition</li>
+                    <li class="margin-10">Location analytics of routine occurrences (LARO) to identify locations with regularly occurring events</li>
+                    <li class="margin-10">Location Analytics of Routine Occurrences (LARO) with a case study on traffic accidents, AAG, New York</li>
+                </ul>
 
-    <div class='award_li'>
-        <div id='award_h1'>
-            <h1>Awards</h1>
+                <h3>2021</h3>
+                <ul>
+                    <li class="margin-10">Location analytics of routine occurrences (LARO) with a case study on traffic accidents, ICC, Italy</li>
+                    <li class="margin-10">Emergency vehicle data map-matching utilizing the Dijkstra’s Algorithm, GIS Day in UTD</li>
+                    <li class="margin-10">Spatial-temporal analysis of traffic accidents for increasing sustainable transportation, The Center for Spatial Studies</li>
+                    <li class="margin-10">The Three Minute Thesis (3MT) Competition, The University of Texas at Dallas</li>
+                </ul>
+
+                <h3>2020</h3>
+                <ul>
+                    <li class="margin-10">Research Showcase Poster Competition, EPPS, The University of Texas at Dallas</li>
+                </ul>
+
+                <h3>2019</h3>
+                <ul>
+                    <li class="margin-10">Visualizing (Wild) Fires in Sentinel-2 imagery using custom script in EO Browser, GIS Day in UTD</li>
+                    <li class="margin-10">Developing an hourly risk model for street networks in Dallas, SWAAG</li>
+                    <li class="margin-10">Integration of Earth observations and in situ data for analyzing lake level changes, GIS Day Binghamton University</li>
+                    <li class="margin-10">Integration of Earth observations and in situ data for analyzing lake level changes, AAG</li>
+                </ul>
+            </div>
         </div>
-
-        <h3>2023</h3>
-        <ul>
-            <li>Second Place in Graduate Paper Competition, SWAAG conference</li>
-            <li data-image='Images\awards\ICC2023.jpg'>International Cartographic Association Scholarship</li>
-            <li>Travel award from USNC for ICA with NSF funding to attend the ICC2023</li>
-            <li>Betty & Gifford Johnson Travel Award, UTD</li>
-        </ul>
-
-        <h3>2022</h3>
-        <ul>
-            <li>Graduate student participants of the Grad WINGS Workshop, UCGIS</li>
-            <li>International Cartographic Association Scholarship</li>
-            <li>Second Place, Student Lightning Talk Award, UCGIS Symposium</li>
-            <li>Third Place in GIS Day 2022 Awarded by Geospatial Information Sciences Program, UTD</li>
-            <li>Travel award from UCGIS to attend the UCGIS Symposium</li>
-            <li>The University of Texas at Dallas 2022 Three Minute Thesis (3MT) Competition, Finalist</li>
-            <li>Honorable mentions, GI Science & Systems Student Honors Paper Competition session, AAG</li>
-            <li>International Cartographic Association Scholarship</li>
-        </ul>
-
-        <h3>2021</h3>
-        <ul>
-            <li>Travel award from USNC for ICA with NSF funding to attend the ICC2021</li>
-            <li>Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</li>
-            <li>PhD Research Small Grants Awarded by the Office of Graduate Education, UTD</li>
-            <li>First Place in GIS Day 2021 Awarded by Geospatial Information Sciences Program, UTD</li>
-        </ul>
-
-        <h3>2019</h3>
-        <ul>
-            <li>First Place in GIS Day 2019 Awarded by Geospatial Information Sciences Program, UTD</li>
-            <li>Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</li>
-            <li>First Place in GIS Day 2019 Awarded by the Geography Department at Binghamton University</li>
-        </ul>
-
-        <h3>2015</h3>
-        <ul>
-            <li>Outstanding Prize in GeoDesign at Esri GIS Software Development Contest</li>
-        </ul>
-
-        <div class="award_pic" id="award_pic">
-            <span class="close_award">&times;</span>
-            <img id="pop-img" src="">
-        </div>
-
-    </div>
-    </div>
-
-
-
-    <div id="Pre">
-        <h1>Presentations</h1>
-        <div class="gallery">
-
-            <div class="gallery-item">
-                <img src="Images\presentation\graduate.jpg" alt="Being Dr.Wu, Dallas" class="gallery-img">
-                <figcaption>Being Dr.Wu, Dallas</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\aag_denver.jpg" alt="Association of American Geographers Conference"
-                    class="gallery-img">
-                <figcaption>AAG 2023, Denver</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\autocarto.jpg" alt="AutoCarto" class="gallery-img">
-                <figcaption>AutoCarto, Redlands</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\hawaii.jpg" alt="AAG, Honolulu" class="gallery-img">
-                <figcaption>AAG 2024, Honolulu</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\icc_africa.jpg" alt="ICC, Africa" class="gallery-img">
-                <figcaption>ICC 2023, Africa</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\3mpt.jpg" alt="3MT, Dallas" class="gallery-img">
-                <figcaption>3MT, Dallas</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\laredo swaag.jpg" alt="SWAAG, Laredo" class="gallery-img">
-                <figcaption>SWAAG, Laredo</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\occ2021.jpg" alt="ICC, Italy" class="gallery-img">
-                <figcaption>ICC 2021, Italy</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\ucgis.jpg" alt="UCGIS, Syracuse" class="gallery-img">
-                <figcaption>UCGIS, Syracuse</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\usgif.jpg" alt="USGIF, Denver" class="gallery-img">
-                <figcaption>USGIF, Denver</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\aag2022.png" alt="USGIF, Denver" class="gallery-img">
-                <figcaption>AAG 2020, Online</figcaption>
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images\presentation\2019aag.jpg" alt="USGIF, Denver" class="gallery-img">
-                <figcaption>AAG 2019, DC</figcaption>
-            </div>
-
-        </div>
-    </div>
-
-    <div class='award_li'>
-
-        <h3>2024</h3>
-        <ul>
-            <li>Understanding the role of geographical environments in emergency dispatch, AAG, March</li>
-        </ul>
-        <h3>2023</h3>
-        <ul>
-            <li>Identify geographical environments influencing emergency response performance. SWAAG</li>
-            <li>Modeling of emergency incident with GPS trajectory data using random forest algorithm. ICC</li>
-            <li>Assessing the role of geographical context in modeling the likelihood of emergency response. AAG</li>
-        </ul>
-
-        <h3>2022</h3>
-        <ul>
-            <li>Driving pattern analysis for emergency vehicle (EV). AutoCarto</li>
-            <li>Understanding emergency vehicle movement from GPS trajectory data. GIS Day in UTD</li>
-            <li>Understanding 911 Response Time from GPS trajectory data. UTD Research Day</li>
-            <li>Driving pattern analysis for emergency vehicle (EV) using multi-source data. UCGIS, Syracuse</li>
-            <li>Why is there a delay in a 911 vehicle arriving? The Three Minute Thesis (3MT) Competition</li>
-            <li>Location analytics of routine occurrences (LARO) to identify locations with regularly occurring events
-            </li>
-            <li>Location Analytics of Routine Occurrences (LARO) with a case study on traffic accidents. AAG,New York
-            </li>
-        </ul>
-
-        <h3>2021</h3>
-        <ul>
-            <li>location analytics of routine occurrences (LARO) with a case study on traffic accidents. ICC, Italy</li>
-            <li>Emergency vehicle data map-matching utilizing the Dijkstra’s Algorithm. GIS Day in UTD</li>
-            <li>Spatial-temporal analysis of traffic accidents for increasing sustainable transportation.The Center for
-                Spatial Studies</li>
-            <li>The Three Minute Thesis (3MT) Competition. The University of Texas at Dallas</li>
-        </ul>
-
-        <h3>2020</h3>
-        <ul>
-            <li>Research Showcase Poster Competition, EPPS. The University of Texas at Dallas</li>
-        </ul>
-
-        <h3>2019</h3>
-        <ul>
-            <li>Visualizing (Wild) Fires in Sentinel-2 imagery using custom script in EO Browser. GIS Day in UTD</li>
-            <li>Developing an hourly risk model for street networks in Dallas. SWAAG</li>
-            <li>Integration of Earth observations and in situ data for analyzing lake level changes. GIS Day Binghamton
-                University</li>
-            <li>Integration of Earth observations and in situ data for analyzing lake level changes. AAG</li>
-        </ul>
-    </div>
+    </section>
 
 
     <div class="myModal" class='modal'>

@@ -61,7 +61,7 @@ header {
     opacity: 0; /* Start hidden */
     transition: opacity 1s ease-in-out; /* Smooth fade transition */
     position: absolute;
-    margin-top: 15vh;
+    /* margin-top: 10vh; */
 }
 
 /* Class to show the element */
