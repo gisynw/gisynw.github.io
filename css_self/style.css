@@ -955,7 +955,7 @@
     height: auto;
   }
   .img-circle {
-    border-radius: 15%;
+    border-radius: 20%;
   }
   hr {
     margin-top: 21px;
@@ -6712,6 +6712,7 @@
     overflow-x: hidden;
     font-family: sans-serif;
     color: #333;
+    line-height: 1.2;
   }
   
   li {
@@ -6732,6 +6733,7 @@
   
   p.large {
     font-size: 16px;
+    line-height: 1.7;
   }
   
   a,
@@ -7368,7 +7370,7 @@
   }
   
   .team-member h4 {
-    margin-top: 25px;
+    margin-top: 5px;
     text-transform: none;
   }
   
