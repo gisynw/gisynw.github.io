@@ -21,7 +21,7 @@
     bottom: 0;
     left: 50px; /* Position the line */
     width: 4px; /* Line thickness */
-    background-color: #CC0000;
+    background-color: #582C83;
     z-index: 0;
 }
 
@@ -35,7 +35,7 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid #CC0000;
+    border-bottom: 15px solid #582C83;
 }
 
 /* Timeline items */

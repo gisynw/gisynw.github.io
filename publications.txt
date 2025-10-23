@@ -1,0 +1,5 @@
+Yang, Y., Wu, Y., & Yuan, M. (2024). What Local Environments Drive Opportunities for Social Events? A New Approach Based on Bayesian Modeling in Dallas, Texas, USA. ISPRS International Journal of Geo-Information, 13(3), 81.
+Wu, Y., Yang, Y., & Yuan, M. (2024). Location Analytics of Routine Occurrences (LARO) to Identify Locations with Regularly Occurring Events with a Case Study on Traffic Accidents. Information, 15(2), 107.
+Wu, Y., Yang, Y., & Yuan, M. (2023). Understanding the role of geographical environments in emergency dispatches with GPS trajectories. Abstracts of the ICA, 6, 276.
+Wu, Y., & Yuan, M. (2021). Where and why there: location analytics of routine occurrences (LARO) with a case study on traffic accidents. Abstracts of the ICA, 3, 318.
+Wu, Y. (2019). Integration of Earth Observation and in Situ Data for Analyzing Lake Level Changes in Minnesota (1992–2016) (Master's thesis, State University of New York at Binghamton).
