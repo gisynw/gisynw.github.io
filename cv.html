@@ -1,405 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yanan Wu - Curriculum Vitae</title>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
-        
-        body {
-            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-            color: #333;
-            line-height: 1.5;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f9f9f9;
-        }
-        
-        .cv-container {
-            background-color: white;
-            padding: 50px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.05);
-            border-top: 5px solid #2c3e50;
-        }
-        
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        header {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        
-        h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 32px;
-            color: #2c3e50;
-            margin: 0 0 10px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .title {
-            font-size: 18px;
-            color: #040505;
-            font-weight: 300;
-            margin: 0;
-        }
-        
-        .contact-info {
-            text-align: right;
-            font-size: 14px;
-            color: #555;
-        }
-        
-        .contact-info p {
-            margin: 3px 0;
-        }
-        
-        section {
-            margin-bottom: 30px;
-        }
-        
-        h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 20px;
-            color: #2c3e50;
-            border-bottom: 3px solid #f1f1f1;
-            padding-bottom: 8px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            display: inline-block;
-            border-bottom-color: #3498db;
-        }
-        
-        .item {
-            margin-bottom: 15px;
-            display: flex;
-        }
-        
-        .item-year {
-            flex: 0 0 120px;
-            font-weight: bold;
-            color: #7f8c8d;
-            font-size: 14px;
-            padding-top: 2px;
-        }
-        
-        .item-content {
-            flex: 1;
-        }
-        
-        .publication-item {
-            margin-bottom: 12px;
-            padding-left: 15px;
-            border-left: 3px solid #eee;
-        }
-        
-        .publication-item:hover {
-            border-left-color: #3498db;
-        }
-        
-        .appointment-item, .education-item {
-            margin-bottom: 15px;
-        }
-        
-        @media print {
-            body {
-                background-color: white;
-                margin: 0;
-            }
-            .cv-container {
-                box-shadow: none;
-                padding: 0;
-                border: none;
-            }
-            a {
-                color: #000;
-                text-decoration: none;
-            }
-        }
-    </style>
-    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yanan Wu - Curriculum Vitae</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #eee; color: #000; font: 11pt/1.25 "Times New Roman", Times, serif; }
+.cv-container { max-width: 210mm; margin: 24px auto; padding: 12.7mm; background: #fff; }
+.cv-actions { max-width: 210mm; margin: 20px auto; padding: 0 18px; text-align: right; font: 14px/1.5 Arial, sans-serif; }
+.cv-actions button { padding: 10px 18px; border: 1px solid #333; border-radius: 4px; background: #333; color: #fff; font: inherit; cursor: pointer; }
+.cv-actions button:hover { background: #555; }
+.cv-actions p { margin: 6px 0 0; }
+header { text-align: center; margin-bottom: 22px; }
+h1 { font-size: 16pt; margin: 0 0 7px; text-transform: uppercase; }
+header p { margin: 4px 0; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.profile-links a { text-decoration: underline; text-underline-offset: 2px; }
+section { margin-top: 18px; }
+h2 { font-size: 12pt; text-transform: uppercase; border-bottom: 1px solid #000; margin: 0 0 9px; padding-bottom: 2px; break-after: avoid; }
+h3 { font-size: 11pt; margin: 10px 0 6px; break-after: avoid; }
+.dated-entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; margin-bottom: 10px; break-inside: avoid; }
+.date { text-align: right; white-space: nowrap; }
+.year-entry { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; margin-bottom: 8px; break-inside: avoid; }
+.citation { margin: 0 0 9px; padding-left: 20px; text-indent: -20px; break-inside: avoid; }
+ul { margin: 0; padding-left: 20px; }
+li { margin-bottom: 8px; }
+footer { text-align: center; font-size: 9pt; margin-top: 24px; }
+@page { size: A4; margin: 12.7mm; }
+@media print {
+    .cv-actions { display: none; }
+    body { background: #fff; }
+    .cv-container { max-width: none; margin: 0; padding: 0; }
+    p, li { orphans: 2; widows: 2; }
+}
+@media screen and (max-width: 600px) {
+    .cv-container { margin: 0; padding: 24px 18px; }
+    .dated-entry { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+    .date { text-align: left; }
+}
+</style>
 </head>
 <body>
-
-<div class="cv-container">
-    <header>
-        <div>
-            <h1>Yanan Wu</h1>
-            <h3 class="title">Assistant Professor</h3>
-            <p>Department of Geography<br>The University of Central Arkansas</p>
-        </div>
-        <div class="contact-info">
-            <p>ywu@uca.edu</p>
-            <p><a href="https://gisynw.github.io">https://gisynw.github.io</a></p>
-            <p>Conway, Arkansas</p>
-        </div>
-    </header>
-
-    <section>
-        <h2>Education</h2>
-
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2019–2024   Ph.D. in Geospatial information sciences. The University of Texas at Dallas</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2017–2019   M.A. in Geography. Binghamton University</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2013–2017   B.S. in Resource Environment and Urban-Rural Planning Management. Xi'an University of Science and Technology</div>
-        </div>
-        
-    </section>
-
-    <section>
-        <h2>Academic Appointments</h2>
-
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2025–now   Assistant Professor, Department of Geography, The University of Central Arkansas</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2024–2025   Visiting Assistant Professor, Geography Department, Clark University</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2024–2024   GIS Analyst, Information Technology Services, City of Lewisville</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2023-2024   Teaching Assistant, Gepspatial Information Scicences Department,</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2021-2023   Instructor, Gepspatial Information Scicences Department, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2020-2021   Teaching Assistant, Gepspatial Information Scicences Department,</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2019-2020   Research Assistant, Gepspatial Information Scicences Department,</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year"></div>
-            <div class="item-content">2017-2019   Graduate Assistant, Geography, Binghamton Department</div>
-        </div>
-        
-    </section>
-
-    <section>
-        <h2>Grants</h2>
-        
-        <div class="item">
-            <div class="item-year">2026</div>
-            <div class="item-content"><b>UCA Faculty Research:</b> Indoor Spatial Information Infrastructure: A GIS Application for Navigation, Search, and Learning, October 2025</div>
-        </div>
-
-         <div class="item">
-            <div class="item-year">2026</div>
-            <div class="item-content"><b>UCA Foundation Faculty Grant:</b> Developing an Augmented Reality Indoor Assistive Navigator for Smart Campus Environments, December, 2025</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Publications</h2>
-
-        <div class="item">
-        <div class="item-year">2026</div>
-        <div class="item-content publication-item">
-            <b>Wu, Y.,</b>Yang, Y., Yuan, M. (2026). <a href="https://www.mdpi.com/2220-9964/15/4/141" target="_blank">Where Matters: Geographic Influences on Emergency Response—A Case Study of Dallas, Texas</a>. <em>ISPRS International Journal of Geo-Information</em>, 15(4), 141.
-        </div>
-        </div>
-
-        <div class="item">
-            <div class="item-year">2025</div>
-            <div class="item-content publication-item">
-                Yang, Y. <b>Wu, Y.</b>, Yuan, M. (2025). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.70145" target="_blank">Simulation‐Tested Spatial Association Mining of Co‐Location Patterns From Multiple Point‐Feature Classes</a>. <em>Transactions in GIS</em>, 29(7), e70145.
-            </div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2024</div>
-            <div class="item-content publication-item">
-                Yang, Y., <b>Wu, Y.</b>, & Yuan, M. (2024). <a href="https://doi.org/10.3390/ijgi13030081" target="_blank">What Local Environments Drive Opportunities for Social Events? A New Approach Based on Bayesian Modeling in Dallas, Texas, USA</a>. <em>ISPRS International Journal of Geo-Information</em>, 13(3), 81.
-            </div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2024</div>
-            <div class="item-content publication-item">
-                <b>Wu, Y.</b>, Yang, Y., & Yuan, M. (2024). <a href="https://doi.org/10.3390/info15020107" target="_blank">Location Analytics of Routine Occurrences (LARO) to Identify Locations with Regularly Occurring Events with a Case Study on Traffic Accidents</a>. <em>Information</em>, 15(2), 107.
-            </div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2023</div>
-            <div class="item-content publication-item">
-                <b>Wu, Y.</b>, Yang, Y., & Yuan, M. (2023). <a href="https://ica-abs.copernicus.org/articles/6/276/2023/ica-abs-6-276-2023.pdf" target="_blank">Understanding the role of geographical environments in emergency dispatches with GPS trajectories</a>. <em>Abstracts of the ICA</em>, 6, 276.
-            </div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content publication-item">
-                <b>Wu, Y.,</b> Yang, Y., Yuan, M. (2022). <a href="https://cartogis.org/docs/autocarto/2022/docs/abstracts/Session8_Yu_8726.pdf" target="_blank">Analyze emergency-vehicle dispatches in Dallas, Texas, USA</a>. <em>Unknown Journal</em>.
-            </div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2021</div>
-            <div class="item-content publication-item">
-                <b>Wu, Y.</b>, & Yuan, M. (2021). <a href="https://ica-abs.copernicus.org/articles/3/318/2021/ica-abs-3-318-2021.pdf" target="_blank">Where and why there: location analytics of routine occurrences (LARO) with a case study on traffic accidents</a>. <em>Abstracts of the ICA</em>, 3, 318.
-            </div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2019</div>
-            <div class="item-content publication-item">
-                <b>Wu, Y.</b> (2019). <a href="https://www.proquest.com/docview/2296700766?pq-origsite=gscholar&amp;fromopenview=true" target="_blank">Integration of Earth Observation and in Situ Data for Analyzing Lake Level Changes in Minnesota (1992–2016)</a>. <em>Master's thesis, State University of New York at Binghamton</em>.
-            </div>
-        </div>
-        
-    </section>
-    
-
-
-    <section>
-        <h2>Awards</h2>
-
-        <div class="item">
-            <div class="item-year">2023</div>
-            <div class="item-content">Second Place in Graduate Paper Competition, SWAAG conference</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2023</div>
-            <div class="item-content">International Cartographic Association Scholarship</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2023</div>
-            <div class="item-content">Travel award from USNC for ICA with NSF funding to attend the ICC2023</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2023</div>
-            <div class="item-content">Betty & Gifford Johnson Travel Award, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">Graduate student participants of the Grad WINGS Workshop, UCGIS</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">International Cartographic Association Scholarship</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">Second Place, Student Lightning Talk Award, UCGIS Symposium</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">Third Place in GIS Day 2022 Awarded by Geospatial Information Sciences Program, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">Travel award from UCGIS to attend the UCGIS Symposium</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">The University of Texas at Dallas 2022 Three Minute Thesis (3MT) Competition, Finalist</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2022</div>
-            <div class="item-content">Honorable mentions, GI Science & Systems Student Honors Paper Competition session, AAG</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2021</div>
-            <div class="item-content">Travel award from USNC for ICA with NSF funding to attend the ICC2021</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2021</div>
-            <div class="item-content">Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2021</div>
-            <div class="item-content">PhD Research Small Grants Awarded by the Office of Graduate Education, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2021</div>
-            <div class="item-content">First Place in GIS Day 2021 Awarded by Geospatial Information Sciences Program, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2019</div>
-            <div class="item-content">First Place in GIS Day 2019 Awarded by Geospatial Information Sciences Program, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2019</div>
-            <div class="item-content">Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2019</div>
-            <div class="item-content">First Place in GIS Day 2019 Awarded by the Geography Department at Binghamton University</div>
-        </div>
-        
-        <div class="item">
-            <div class="item-year">2015</div>
-            <div class="item-content">Outstanding Prize in GeoDesign at Esri GIS Software Development Contest</div>
-        </div>
-        
-    </section>
-    
-    <footer>
-        <p style="text-align: center; color: #999; font-size: 12px; margin-top: 50px;">
-            Last updated: January 2026
-        </p>
-    </footer>
-
+<div class="cv-actions">
+<button type="button" onclick="window.print()" aria-describedby="pdf-help">Download as PDF</button>
+<p id="pdf-help">Choose “Save as PDF” in the print dialog.</p>
 </div>
-
+<main class="cv-container">
+<header>
+<h1>Yanan Wu</h1>
+<p>Assistant Professor of Geography at University of Central Arkansas</p>
+<p><a href="mailto:ywu@uca.edu">ywu@uca.edu</a> | Conway, Arkansas</p>
+<p class="profile-links"><a href="https://gisynw.github.io">Personal Website</a> |
+<a href="https://www.linkedin.com/in/giswu/">LinkedIn</a> |
+<a href="https://github.com/gisynw">GitHub</a> |
+<a href="https://ywu120766.medium.com/">Medium</a></p>
+</header>
+<section><h2>Education</h2><div class="dated-entry"><div>Ph.D. in Geospatial information sciences. University of Texas at Dallas, Texas, USA</div><div class="date">2019–2024</div></div><div class="dated-entry"><div>M.A. in Geography. Binghamton University (SUNY), NewYork, USA</div><div class="date">2017–2019</div></div><div class="dated-entry"><div>B.S. in Resource Environment and Urban-Rural Planning Management. Xi&#x27;an University of Science and Technology, Xi&#x27;an, China</div><div class="date">2013–2017</div></div></section><section><h2>Appointments</h2><div class="dated-entry"><div>Assistant Professor, Department of Geography, University of Central Arkansas</div><div class="date">2025–now</div></div><div class="dated-entry"><div>Visiting Assistant Professor, Geography Department, Clark University</div><div class="date">2024–2025</div></div><div class="dated-entry"><div>GIS Analyst, Information Technology Services, City of Lewisville</div><div class="date">2024–2024</div></div><div class="dated-entry"><div>Teaching Assistant, Gepspatial Information Scicences Department, UTD</div><div class="date">2023-2024</div></div><div class="dated-entry"><div>Instructor, Gepspatial Information Scicences Department, UTD</div><div class="date">2021-2023</div></div><div class="dated-entry"><div>Teaching Assistant, Gepspatial Information Scicences Department, UTD</div><div class="date">2020-2021</div></div><div class="dated-entry"><div>Research Assistant, Gepspatial Information Scicences Department, UTD</div><div class="date">2019-2020</div></div><div class="dated-entry"><div>Graduate Assistant, Geography, Binghamton Department</div><div class="date">2017-2019</div></div></section><section><h2>Grants</h2><h3>External Grants</h3><ul><li> Travel Grant: AR-STRIDES: Arkansas Smart Transportation Research Incubator through Data Engineering and Science</li><li>Travel Grant: AGU Annual Meeting</li></ul><h3>Internal Grants</h3><ul><li> UCA Faculty Research: Indoor Spatial Information Infrastructure: A GIS Application for Navigation, Search, and Learning, October 2025</li><li> UCA Foundation Faculty Grant:  Developing an Augmented Reality Indoor Assistive Navigator for Smart Campus Environments, December, 2025</li></ul></section><section><h2>Publications</h2><p class="citation"><b>Wu, Y.,</b>Yang, Y., Deng, C., & Maxwell, A.<a href="https://www-tandfonline-com.utd.idm.oclc.org/doi/full/10.1080/13658816.2026.2717326" target="_blank"> ‘Give me a point and I will place the map’: automated georeferencing historical maps using spatially explicit AI</a>. <em>IJGIS</em>, 1-35.</p><p class="citation"><b>Wu, Y.,</b>Yang, Y., Yuan, M.<a href="https://www-tandfonline-com.utd.idm.oclc.org/doi/full/10.1080/13658816.2026.2717326" target="_blank"> Where Matters: Geographic Influences on Emergency Response—A Case Study of Dallas, Texas.</a>. <em>ISPRS International Journal of Geo-Information</em>, 15(4), 141.</p><p class="citation"><b>Yang, Y.</b>, Wu, Y., Yuan, M. (2025). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.70145" target="_blank">Simulation‐Tested Spatial Association Mining of Co‐Location Patterns From Multiple Point‐Feature Classes</a>. <em>Transactions in GIS</em>, 29(7), e70145.</p><p class="citation">Yang, Y., <b>Wu, Y.</b>, & Yuan, M. (2024). <a href="https://doi.org/10.3390/ijgi13030081" target="_blank">What Local Environments Drive Opportunities for Social Events? A New Approach Based on Bayesian Modeling in Dallas, Texas, USA</a>. <em>ISPRS International Journal of Geo-Information</em>, 13(3), 81.</p><p class="citation"><b>Wu, Y.</b>, Yang, Y., & Yuan, M. (2024). <a href="https://doi.org/10.3390/info15020107" target="_blank">Location Analytics of Routine Occurrences (LARO) to Identify Locations with Regularly Occurring Events with a Case Study on Traffic Accidents</a>. <em>Information</em>, 15(2), 107.</p><p class="citation"><b>Wu, Y.</b>, Yang, Y., & Yuan, M. (2023). <a href="https://ica-abs.copernicus.org/articles/6/276/2023/ica-abs-6-276-2023.pdf" target="_blank">Understanding the role of geographical environments in emergency dispatches with GPS trajectories</a>. <em>Abstracts of the ICA</em>, 6, 276.</p><p class="citation"><b>Wu, Y.</b>, Yang, Y., Yuan, M. (2022). <a href="https://cartogis.org/docs/autocarto/2022/docs/abstracts/Session8_Yu_8726.pdf" target="_blank">Analyze emergency-vehicle dispatches in Dallas, Texas, USA</a>. <em>Unknown Journal</em>.</p><p class="citation"><b>Wu, Y.</b>, & Yuan, M. (2021). <a href="https://ica-abs.copernicus.org/articles/3/318/2021/ica-abs-3-318-2021.pdf" target="_blank">Where and why there: location analytics of routine occurrences (LARO) with a case study on traffic accidents</a>. <em>Abstracts of the ICA</em>, 3, 318.</p><p class="citation"><b>Wu, Y.</b> (2019). <a href="https://www.proquest.com/docview/2296700766?pq-origsite=gscholar&amp;fromopenview=true" target="_blank">Integration of Earth Observation and in Situ Data for Analyzing Lake Level Changes in Minnesota (1992–2016)</a>. <em>Master's thesis, State University of New York at Binghamton</em>.</p></section><section><h2>Conference Proceedings</h2><p class="citation"> Wu, Y., Yang, Y., Yuan, M. Analyze emergency-vehicle dispatches in
+                            Dallas, Texas, USA, In
+                            AutoCarto 2022 Proceedings.</p><p class="citation"> Yang, Y., Wu, Y., Yuan, M. Quantifying the impacts of social
+                            infrastructure on human
+                            networks, In AutoCarto 2022 Proceedings.</p></section><section><h2>Awards</h2><div class="year-entry"><div class="year">2023</div><div>Second Place in Graduate Paper Competition, SWAAG conference</div></div><div class="year-entry"><div class="year"></div><div>International Cartographic Association Scholarship</div></div><div class="year-entry"><div class="year"></div><div>Travel award from USNC for ICA with NSF funding to attend the ICC2023</div></div><div class="year-entry"><div class="year"></div><div>Betty &amp; Gifford Johnson Travel Award, UTD</div></div><div class="year-entry"><div class="year">2022</div><div>Graduate student participants of the Grad WINGS Workshop, UCGIS</div></div><div class="year-entry"><div class="year"></div><div>International Cartographic Association Scholarship</div></div><div class="year-entry"><div class="year"></div><div>Second Place, Student Lightning Talk Award, UCGIS Symposium</div></div><div class="year-entry"><div class="year"></div><div>Third Place in GIS Day 2022 Awarded by Geospatial Information Sciences Program, UTD</div></div><div class="year-entry"><div class="year"></div><div>Travel award from UCGIS to attend the UCGIS Symposium</div></div><div class="year-entry"><div class="year"></div><div>The University of Texas at Dallas 2022 Three Minute Thesis (3MT) Competition, Finalist</div></div><div class="year-entry"><div class="year"></div><div>Honorable mentions, GI Science &amp; Systems Student Honors Paper Competition session, AAG</div></div><div class="year-entry"><div class="year">2021</div><div>Travel award from USNC for ICA with NSF funding to attend the ICC2021</div></div><div class="year-entry"><div class="year"></div><div>Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</div></div><div class="year-entry"><div class="year"></div><div>PhD Research Small Grants Awarded by the Office of Graduate Education, UTD</div></div><div class="year-entry"><div class="year"></div><div>First Place in GIS Day 2021 Awarded by Geospatial Information Sciences Program, UTD</div></div><div class="year-entry"><div class="year">2019</div><div>First Place in GIS Day 2019 Awarded by Geospatial Information Sciences Program, UTD</div></div><div class="year-entry"><div class="year"></div><div>Pioneers Student Research Fund, Geospatial Information Sciences Program, UTD</div></div><div class="year-entry"><div class="year"></div><div>First Place in GIS Day 2019 Awarded by the Geography Department at Binghamton University</div></div><div class="year-entry"><div class="year">2015</div><div>Outstanding Prize in GeoDesign at Esri GIS Software Development Contest</div></div></section><section><h2>Presentations</h2><div class="year-entry"><div class="year">2026</div><div>ArcehiveLens: Semantic Reconstruction &amp; Historical Urban Analytics, AAG, March
+                            </div></div><div class="year-entry"><div class="year">2025</div><div>Digitizing the Past: Reconstructing Historical Cities Using Machine Learning, SWAAG, November
+                            </div></div><div class="year-entry"><div class="year"></div><div>Automatic Reconstruction of Historical Buildings through Deep Learning and Map Analysis, Arkansas GIS User Forum, October
+                            </div></div><div class="year-entry"><div class="year"></div><div>Reconstructing Historical Urban Landscapes: A Machine Learning Approach to 3D City Modeling, AAG, March
+                            </div></div><div class="year-entry"><div class="year">2024</div><div>Understanding the role of geographical environments in emergency dispatch, AAG, March
+                            </div></div><div class="year-entry"><div class="year">2023</div><div>Identify geographical environments influencing emergency response performance, SWAAG
+                            </div></div><div class="year-entry"><div class="year"></div><div>Modeling of emergency incidents with GPS trajectory data using random forest algorithm,
+                                ICC</div></div><div class="year-entry"><div class="year"></div><div>Assessing the role of geographical context in modeling the likelihood of emergency
+                                response, AAG</div></div><div class="year-entry"><div class="year">2022</div><div>Driving pattern analysis for emergency vehicles (EV), AutoCarto</div></div><div class="year-entry"><div class="year"></div><div>Understanding emergency vehicle movement from GPS trajectory data, GIS Day in UTD</div></div><div class="year-entry"><div class="year"></div><div>Understanding 911 Response Time from GPS trajectory data, UTD Research Day</div></div><div class="year-entry"><div class="year"></div><div>Driving pattern analysis for emergency vehicle (EV) using multi-source data, UCGIS,
+                                Syracuse</div></div><div class="year-entry"><div class="year"></div><div>Why is there a delay in a 911 vehicle arriving? The Three Minute Thesis (3MT)
+                                Competition</div></div><div class="year-entry"><div class="year"></div><div>Location analytics of routine occurrences (LARO) to identify locations with regularly
+                                occurring events</div></div><div class="year-entry"><div class="year"></div><div>Location Analytics of Routine Occurrences (LARO) with a case study on traffic accidents,
+                                AAG, New York</div></div><div class="year-entry"><div class="year">2021</div><div>Location analytics of routine occurrences (LARO) with a case study on traffic accidents,
+                                ICC, Italy</div></div><div class="year-entry"><div class="year"></div><div>Emergency vehicle data map-matching utilizing the Dijkstra’s Algorithm, GIS Day in UTD
+                            </div></div><div class="year-entry"><div class="year"></div><div>Spatial-temporal analysis of traffic accidents for increasing sustainable
+                                transportation, The Center for Spatial Studies</div></div><div class="year-entry"><div class="year"></div><div>The Three Minute Thesis (3MT) Competition, The University of Texas at Dallas</div></div><div class="year-entry"><div class="year">2020</div><div>Research Showcase Poster Competition, EPPS. The University of Texas at Dallas, October</div></div><div class="year-entry"><div class="year">2019</div><div>Visualizing (Wild) Fires in Sentinel-2 imagery using custom script in EO Browser. GIS Day in UTD, November</div></div><div class="year-entry"><div class="year"></div><div>Developing an hourly risk model for street networks in Dallas. SWAAG, Fort Worth, Texas. October</div></div><div class="year-entry"><div class="year"></div><div>Integration of Earth observations and in situ data for analyzing lake level changes. GIS Day Binghamton University, March</div></div><div class="year-entry"><div class="year"></div><div>Integration of Earth observations and in situ data for analyzing lake level changes. AAG, Washington D.C. April</div></div></section><section><h2>Academic Service</h2><div class="year-entry"><div class="year">2026</div><div>AAG RSSG Student Honors Paper Competition Judge</div></div><div class="year-entry"><div class="year">2025</div><div>SWAAG Paper Competition Judge</div></div><div class="year-entry"><div class="year">2022</div><div>Student judge for Faculty Three Minutes Thesis (3MT) Competition at UTD</div></div><div class="year-entry"><div class="year"></div><div>USGIF Student Assistant Program at the 2022 GEOINT Symposium</div></div></section>
+<footer>Last updated: September 2026</footer>
+</main>
 </body>
 </html>
